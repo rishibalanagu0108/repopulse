@@ -17,7 +17,7 @@ Load Genesis and official Ponytail full, then run `genesis brief .` for the curr
 Fetch full records with `genesis context . --id ID` only when needed. Do not load project.json or historical proof wholesale.
 Ask the index before reading code: `genesis query . search|scope|callers|callees|impact|path` (`--json` for parsing). Run `genesis query . impact PATH` before editing shared code. Answers are advisory static analysis; `ambiguous` means candidates were not ruled out, so confirm in source.
 Run `genesis serve .` for a live map of the repository when structure is unclear; it reindexes on save and is read-only. Run `genesis index .` if the index is stale and nothing is watching.
-Context fingerprint: d0470c5c3d4d5c51d2294cefb5b2af82b06f805fd7d1542a50af6f8110a74498. Use --since only after receiving that full packet; kickoff is not the packet.
+Context fingerprint: f7728a7e2c7b378222fdca35215729a4ef01bba022a52fa0be0c4e11955e52eb. Use --since only after receiving that full packet; kickoff is not the packet.
 - DECISION-34164c15: Use a single Next.js application
 - DECISION-db93e9f0: Use deterministic repository health scoring
 Applicable invariants, active rules, authorization and proof references are in the packet. Truncated summaries are retrieval pointers, not the full evidence.

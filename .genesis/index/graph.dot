@@ -116,6 +116,7 @@ digraph genesis {
   "file:src/app/page.tsx" -> "file:src/components/repository-search.tsx" [label="imports"];
   "file:src/app/repository/[owner]/[name]/page.tsx" -> "file:src/lib/github.ts" [label="imports"];
   "file:src/app/repository/[owner]/[name]/page.tsx" -> "package:npm:next" [label="imports"];
+  "file:src/app/repository/[owner]/[name]/page.tsx" -> "package:npm:next" [label="imports"];
   "file:src/components/repository-search.tsx" -> "package:npm:next" [label="imports"];
   "file:src/components/repository-search.tsx" -> "package:npm:react" [label="imports"];
   "file:src/lib/env.test.ts" -> "package:npm:vitest" [label="imports"];

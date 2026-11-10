@@ -1,8 +1,8 @@
 {
   "schemaVersion": 2,
   "project": "repopulse",
-  "revision": "dd354898690032d3c967d71a49b23bfa12c49f0a",
-  "sourceHash": "7601604516c7dcfc55c11c248fd0a83e4819f8f645f6637bcb1386423095ad87",
+  "revision": "b4d0942ed23b327bb0485fa251b89d871802dd2f",
+  "sourceHash": "31f27e032ce9be064f95d105249d3f6fb71e903c7975cfe2b316500c165a3c22",
   "provenance": {
     "tool": "genesis-graphizer",
     "method": "static-analysis",
@@ -107,7 +107,7 @@
       "language": "javascript",
       "confidence": 1,
       "extractor": "filesystem",
-      "contentHash": "f249de2629cef518e4caedbdfe188f4129dc71661fcfdb0a50d3976f6dd5aa0c"
+      "contentHash": "92e22d45ec5f81963da9746d50f50d5aedd0da42a0786406d2118066494d3273"
     },
     {
       "id": "file:src/components/repository-search.tsx",
@@ -392,7 +392,7 @@
       "name": "RepositoryPage",
       "label": "RepositoryPage",
       "path": "src/app/repository/[owner]/[name]/page.tsx",
-      "line": 4,
+      "line": 5,
       "confidence": 0.8,
       "extractor": "conservative-js-symbols",
       "contentHash": "0d1d41291efe2321f259f68c2921426d611b6431156d8deaba0edd3114f58004"
@@ -832,7 +832,7 @@
       "type": "defines",
       "source": "file:src/app/repository/[owner]/[name]/page.tsx",
       "target": "symbol:src/app/repository/[owner]/[name]/page.tsx#function:RepositoryPage",
-      "line": 4,
+      "line": 5,
       "resolved": true,
       "confidence": 0.8,
       "extractor": "conservative-js-symbols"
@@ -1154,7 +1154,7 @@
       "source": "file:src/app/repository/[owner]/[name]/page.tsx",
       "target": "file:src/lib/github.ts",
       "specifier": "@/lib/github",
-      "line": 2,
+      "line": 3,
       "resolved": true,
       "confidence": 0.85,
       "extractor": "javascript-imports"
@@ -1165,6 +1165,16 @@
       "target": "package:npm:next",
       "specifier": "next/link",
       "line": 1,
+      "resolved": false,
+      "confidence": 0.5,
+      "extractor": "javascript-imports"
+    },
+    {
+      "type": "imports",
+      "source": "file:src/app/repository/[owner]/[name]/page.tsx",
+      "target": "package:npm:next",
+      "specifier": "next/server",
+      "line": 2,
       "resolved": false,
       "confidence": 0.5,
       "extractor": "javascript-imports"
@@ -1262,6 +1272,6 @@
   ],
   "warnings": [],
   "stats": {
-    "unresolvedCalls": 22
+    "unresolvedCalls": 23
   }
 }
