@@ -1,0 +1,30 @@
+{
+  "task": "M0",
+  "gate": "foundation",
+  "kind": "command",
+  "attempt": "6be5041f-65d4-4b08-9ab3-3ae80f0359e9",
+  "command": "npm run lint && npm run typecheck && npm test -- --runInBand",
+  "started_at": "2026-11-10T09:19:09.021Z",
+  "observed_at": "2026-11-10T09:19:14.555Z",
+  "exit_code": 1,
+  "signal": null,
+  "stdout": "\n> repopulse@0.1.0 lint\n> eslint\n\n\n> repopulse@0.1.0 typecheck\n> tsc --noEmit\n\n\n> repopulse@0.1.0 test\n> vitest run --passWithNoTests --runInBand\n\n",
+  "stderr": "file:///home/rishik-kumar/Personal_Projects/repopulse/node_modules/vitest/dist/chunks/cac.BfaZ95xE.js:404\n          throw new CACError(`Unknown option \\`${name.length > 1 ? `--${name}` : `-${name}`}\\``);\n                ^\n\nCACError: Unknown option `--runInBand`\n    at Command.checkUnknownOptions (file:///home/rishik-kumar/Personal_Projects/repopulse/node_modules/vitest/dist/chunks/cac.BfaZ95xE.js:404:17)\n    at CAC.runMatchedCommand (file:///home/rishik-kumar/Personal_Projects/repopulse/node_modules/vitest/dist/chunks/cac.BfaZ95xE.js:604:13)\n    at CAC.parse (file:///home/rishik-kumar/Personal_Projects/repopulse/node_modules/vitest/dist/chunks/cac.BfaZ95xE.js:545:12)\n    at file:///home/rishik-kumar/Personal_Projects/repopulse/node_modules/vitest/dist/cli.js:27:13\n    at ModuleJob.run (node:internal/modules/esm/module_job:413:25)\n    at process.processTicksAndRejections (node:internal/process/task_queues:103:5)\n    at async onImport.tracePromise.__proto__ (node:internal/modules/esm/loader:660:26)\n    at async asyncRunEntryPointWithESMLoader (node:internal/modules/run_main:101:5)\n\nNode.js v24.13.0\n",
+  "failure": "command-failed",
+  "receipt": null,
+  "revision": {
+    "commit": "b11eb9e9039253752a243973f0216511d6bce832",
+    "dirty": true
+  },
+  "source_hash": "0c07f081de6dd1c7ec63f5a5abe7de892ba425bb8a2a065e45f431851a6fab21",
+  "before_hash": "0c07f081de6dd1c7ec63f5a5abe7de892ba425bb8a2a065e45f431851a6fab21",
+  "config_hash": "94ce172416faaaadc2c155245edcd666e986608554c92d0f24bf77057d24bf96",
+  "environment": {
+    "node": "v24.13.0",
+    "platform": "linux",
+    "arch": "x64",
+    "verifier": "358371454f03eb4fdfd3eda3cb1d18cb1dd8fe9445404bb3d3047267b3977eb9",
+    "variables": {}
+  },
+  "hash": "39c0d35c7c0ef4fe1e7833f5587f0262c476673118439832336d71402472b29e"
+}

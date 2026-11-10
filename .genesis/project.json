@@ -9,7 +9,7 @@
     "non_goals": [],
     "trust_boundary": "local repository",
     "created_at": "2026-11-10T09:07:15.311Z",
-    "updated_at": "2026-11-10T09:09:27.624Z"
+    "updated_at": "2026-11-10T09:20:23.844Z"
   },
   "policy": {
     "ponytail": "full",
@@ -23,11 +23,11 @@
     }
   },
   "lifecycle": {
-    "phase": "planning",
+    "phase": "build",
     "status": "active",
-    "active_task": null,
+    "active_task": "M0",
     "blocker": null,
-    "next_action": "Finish defining requirement-linked tasks, then run genesis plan check."
+    "next_action": "Run the task pre-flight."
   },
   "commands": {},
   "workflow": {
@@ -74,7 +74,12 @@
       "at": "2026-11-10T09:09:24.413Z",
       "source_hash": "f4b2947ba31fb85e1b0515b254498e45cb46c5d07bac0c234eefcb7e1e19cc26"
     },
-    "plan_approval": null
+    "plan_approval": {
+      "human": "Rishik Kumar",
+      "reason": "Approved the five-milestone implementation plan and its executable gates.",
+      "at": "2026-11-10T09:11:29.762Z",
+      "source_hash": "f4b2947ba31fb85e1b0515b254498e45cb46c5d07bac0c234eefcb7e1e19cc26"
+    }
   },
   "artifacts": [
     {
@@ -196,7 +201,7 @@
     {
       "id": "M0",
       "outcome": "Create the Next.js application foundation, design tokens, environment contract, and quality checks without product data flows.",
-      "state": "queued",
+      "state": "active",
       "risk": "medium",
       "owner": null,
       "scope": [],
@@ -216,8 +221,14 @@
           "kind": "command",
           "command": "npm run lint && npm run typecheck && npm test -- --runInBand",
           "mandatory": true,
-          "status": "pending",
-          "evidence": null
+          "status": "pass",
+          "evidence": {
+            "path": ".genesis/evidence/M0-foundation-a2f3aaff-24f1-4788-a618-faa4046e89f0.json",
+            "hash": "82fb1f928774eefa94ea1065ca586abefe75f73c6670618345726e2c6d320677",
+            "source_hash": "2509d917bbe49c7c2ef563c6797bd7e75cedc8dfbd1b68df7a59dbff0195f22d",
+            "config_hash": "94ce172416faaaadc2c155245edcd666e986608554c92d0f24bf77057d24bf96",
+            "observed_at": "2026-11-10T09:20:23.817Z"
+          }
         },
         {
           "id": "independent-review",
@@ -234,7 +245,10 @@
       "failures": [],
       "limitations": [],
       "created_at": "2026-11-10T09:09:16.268Z",
-      "updated_at": "2026-11-10T09:09:16.268Z"
+      "updated_at": "2026-11-10T09:09:16.268Z",
+      "base_manifest": {
+        "SPEC.md": "1bd5d97c02577b4fc2df5426347c70c33a205752685abc68da239192beb380e9"
+      }
     },
     {
       "id": "M1",
@@ -427,7 +441,56 @@
   "learning_proposals": [],
   "cleanup_proposals": [],
   "controls": [],
-  "attempts": [],
+  "attempts": [
+    {
+      "id": "6be5041f-65d4-4b08-9ab3-3ae80f0359e9",
+      "task": "M0",
+      "kind": "gate",
+      "command": "npm run lint && npm run typecheck && npm test -- --runInBand",
+      "timeout": 120000,
+      "authorization": null,
+      "pid": 41343,
+      "child_pid": 41356,
+      "started_at": "2026-11-10T09:19:09.021Z",
+      "status": "failed",
+      "before_hash": "0c07f081de6dd1c7ec63f5a5abe7de892ba425bb8a2a065e45f431851a6fab21",
+      "config_hash": "94ce172416faaaadc2c155245edcd666e986608554c92d0f24bf77057d24bf96",
+      "environment": {
+        "node": "v24.13.0",
+        "platform": "linux",
+        "arch": "x64",
+        "verifier": "358371454f03eb4fdfd3eda3cb1d18cb1dd8fe9445404bb3d3047267b3977eb9",
+        "variables": {}
+      },
+      "cost": null,
+      "stop_reason": "command-failed",
+      "ended_at": "2026-11-10T09:19:14.555Z"
+    },
+    {
+      "id": "a2f3aaff-24f1-4788-a618-faa4046e89f0",
+      "task": "M0",
+      "kind": "gate",
+      "command": "npm run lint && npm run typecheck && npm test -- --runInBand",
+      "timeout": 120000,
+      "authorization": null,
+      "pid": 42422,
+      "child_pid": 42434,
+      "started_at": "2026-11-10T09:19:56.817Z",
+      "status": "passed",
+      "before_hash": "2509d917bbe49c7c2ef563c6797bd7e75cedc8dfbd1b68df7a59dbff0195f22d",
+      "config_hash": "94ce172416faaaadc2c155245edcd666e986608554c92d0f24bf77057d24bf96",
+      "environment": {
+        "node": "v24.13.0",
+        "platform": "linux",
+        "arch": "x64",
+        "verifier": "358371454f03eb4fdfd3eda3cb1d18cb1dd8fe9445404bb3d3047267b3977eb9",
+        "variables": {}
+      },
+      "cost": null,
+      "stop_reason": null,
+      "ended_at": "2026-11-10T09:20:23.817Z"
+    }
+  ],
   "authorizations": [],
   "experiments": [],
   "incidents": [],

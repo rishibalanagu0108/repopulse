@@ -1,0 +1,18 @@
+{
+  "mcpServers": {
+    "concord": {
+      "command": "concord-mcp",
+      "env": {
+        "CONCORD_REPO_ROOT": "/home/rishik-kumar/Personal_Projects/repopulse"
+      }
+    }
+  },
+  "tools": {
+    "shell": {
+      "backgroundCompletionBehavior": "inject"
+    }
+  },
+  "experimental": {
+    "modelSteering": true
+  }
+}

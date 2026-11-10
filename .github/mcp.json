@@ -1,0 +1,11 @@
+{
+  "mcpServers": {
+    "concord": {
+      "command": "concord-mcp",
+      "env": {
+        "CONCORD_REPO_ROOT": "/home/rishik-kumar/Personal_Projects/repopulse",
+        "CONCORD_AGENT_KIND": "copilot-cli"
+      }
+    }
+  }
+}
