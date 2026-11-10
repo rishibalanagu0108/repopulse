@@ -9,7 +9,7 @@
     "non_goals": [],
     "trust_boundary": "local repository",
     "created_at": "2026-11-10T09:07:15.311Z",
-    "updated_at": "2026-11-10T11:24:40.945Z"
+    "updated_at": "2026-11-10T12:16:58.535Z"
   },
   "policy": {
     "ponytail": "full",
@@ -290,11 +290,11 @@
           "mandatory": true,
           "status": "pass",
           "evidence": {
-            "path": ".genesis/evidence/M1-github-flow-3502eb9c-4ae4-4c61-a942-5d917135d8a3.json",
-            "hash": "75a31bce99abbcd643d14b49fbc11103745074b987f64a7dc5e26d48319de98d",
-            "source_hash": "d3e331c2f62a06950dc461be648d145875d39e058f07f41e4bd76f0ac35fbc50",
+            "path": ".genesis/evidence/M1-github-flow-6ae487c2-9359-4538-8473-5c2458995ea6.json",
+            "hash": "0b6517c097b4f28335ca30c6f4100479c3761b43c00aafd8317884da16511926",
+            "source_hash": "c05e52024b71860b55f66f0b4dfb57f3ce1694fe436c36154821f4c0cbad580a",
             "config_hash": "f6554b54e5fd3038f75621ff4f81388d8bdc10ff49de26bc6bc31a127681f591",
-            "observed_at": "2026-11-10T11:24:40.593Z"
+            "observed_at": "2026-11-10T12:16:58.067Z"
           }
         },
         {
@@ -623,6 +623,30 @@
       "cost": null,
       "stop_reason": null,
       "ended_at": "2026-11-10T11:24:40.593Z"
+    },
+    {
+      "id": "6ae487c2-9359-4538-8473-5c2458995ea6",
+      "task": "M1",
+      "kind": "gate",
+      "command": "npm test -- --runInBand",
+      "timeout": 120000,
+      "authorization": null,
+      "pid": 69251,
+      "child_pid": 69285,
+      "started_at": "2026-11-10T12:16:55.235Z",
+      "status": "passed",
+      "before_hash": "c05e52024b71860b55f66f0b4dfb57f3ce1694fe436c36154821f4c0cbad580a",
+      "config_hash": "f6554b54e5fd3038f75621ff4f81388d8bdc10ff49de26bc6bc31a127681f591",
+      "environment": {
+        "node": "v24.13.0",
+        "platform": "linux",
+        "arch": "x64",
+        "verifier": "358371454f03eb4fdfd3eda3cb1d18cb1dd8fe9445404bb3d3047267b3977eb9",
+        "variables": {}
+      },
+      "cost": null,
+      "stop_reason": null,
+      "ended_at": "2026-11-10T12:16:58.067Z"
     }
   ],
   "authorizations": [],
@@ -630,11 +654,11 @@
   "incidents": [],
   "discovery": null,
   "checkpoint": {
-    "at": "2026-11-10T11:24:40.899Z",
+    "at": "2026-11-10T12:16:58.472Z",
     "revision": {
-      "commit": "b4d0942ed23b327bb0485fa251b89d871802dd2f",
+      "commit": "9e7205bfabbcc4ab900db0b532850eb49193d18a",
       "dirty": true,
-      "source_hash": "d3e331c2f62a06950dc461be648d145875d39e058f07f41e4bd76f0ac35fbc50"
+      "source_hash": "c05e52024b71860b55f66f0b4dfb57f3ce1694fe436c36154821f4c0cbad580a"
     },
     "active_task": "M1",
     "next_action": "Run the task pre-flight."

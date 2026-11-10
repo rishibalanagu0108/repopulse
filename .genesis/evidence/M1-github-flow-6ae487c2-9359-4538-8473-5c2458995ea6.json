@@ -1,0 +1,30 @@
+{
+  "task": "M1",
+  "gate": "github-flow",
+  "kind": "command",
+  "attempt": "6ae487c2-9359-4538-8473-5c2458995ea6",
+  "command": "npm test -- --runInBand",
+  "started_at": "2026-11-10T12:16:55.235Z",
+  "observed_at": "2026-11-10T12:16:58.067Z",
+  "exit_code": 0,
+  "signal": null,
+  "stdout": "\n> repopulse@0.1.0 test\n> node scripts/test.mjs --runInBand\n\n\n RUN  v3.2.7 /home/rishik-kumar/Personal_Projects/repopulse\n\n ✓ src/lib/env.test.ts (1 test) 4ms\n ✓ src/lib/github.test.ts (1 test) 6ms\n\n Test Files  2 passed (2)\n      Tests  2 passed (2)\n   Start at  17:46:56\n   Duration  1.09s (transform 134ms, setup 0ms, collect 286ms, tests 10ms, environment 0ms, prepare 474ms)\n\n",
+  "stderr": "",
+  "failure": null,
+  "receipt": null,
+  "revision": {
+    "commit": "9e7205bfabbcc4ab900db0b532850eb49193d18a",
+    "dirty": true
+  },
+  "source_hash": "c05e52024b71860b55f66f0b4dfb57f3ce1694fe436c36154821f4c0cbad580a",
+  "before_hash": "c05e52024b71860b55f66f0b4dfb57f3ce1694fe436c36154821f4c0cbad580a",
+  "config_hash": "f6554b54e5fd3038f75621ff4f81388d8bdc10ff49de26bc6bc31a127681f591",
+  "environment": {
+    "node": "v24.13.0",
+    "platform": "linux",
+    "arch": "x64",
+    "verifier": "358371454f03eb4fdfd3eda3cb1d18cb1dd8fe9445404bb3d3047267b3977eb9",
+    "variables": {}
+  },
+  "hash": "0b6517c097b4f28335ca30c6f4100479c3761b43c00aafd8317884da16511926"
+}
