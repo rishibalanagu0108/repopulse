@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { connection } from "next/server";
 import { getRepositorySnapshot, GitHubApiError } from "@/lib/github";
 
 export default async function RepositoryPage({
@@ -6,6 +7,7 @@ export default async function RepositoryPage({
 }: {
   params: Promise<{ owner: string; name: string }>;
 }) {
+  await connection();
   const { owner, name } = await params;
   let snapshot;
   let errorMessage;
