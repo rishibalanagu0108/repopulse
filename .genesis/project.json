@@ -9,7 +9,7 @@
     "non_goals": [],
     "trust_boundary": "local repository",
     "created_at": "2026-11-10T09:07:15.311Z",
-    "updated_at": "2026-11-10T09:08:13.952Z"
+    "updated_at": "2026-11-10T09:09:27.624Z"
   },
   "policy": {
     "ponytail": "full",
@@ -23,11 +23,11 @@
     }
   },
   "lifecycle": {
-    "phase": "specification",
+    "phase": "planning",
     "status": "active",
-    "active_task": "SPEC-1",
+    "active_task": null,
     "blocker": null,
-    "next_action": "Ask the human to review SPEC.md, then record explicit specification approval."
+    "next_action": "Finish defining requirement-linked tasks, then run genesis plan check."
   },
   "commands": {},
   "workflow": {
@@ -70,7 +70,10 @@
         "NFR-9"
       ]
     },
-    "plan_check": null,
+    "plan_check": {
+      "at": "2026-11-10T09:09:24.413Z",
+      "source_hash": "f4b2947ba31fb85e1b0515b254498e45cb46c5d07bac0c234eefcb7e1e19cc26"
+    },
     "plan_approval": null
   },
   "artifacts": [
@@ -78,7 +81,7 @@
       "id": "SPEC-1",
       "type": "specification",
       "path": "SPEC.md",
-      "status": "checked",
+      "status": "approved",
       "requirements": [
         "AC-1",
         "AC-2",
@@ -113,18 +116,53 @@
         "NFR-9"
       ],
       "source_hash": "eea67801e451dd34244ea9aa8c57014689cfd11303ef3e24fb64c31a93cf3d6f",
-      "approval": null
+      "approval": {
+        "human": "Rishik Kumar",
+        "reason": "Approved RepoPulse scope, constraints, acceptance criteria, and production MVP boundaries.",
+        "at": "2026-11-10T09:09:09.929Z",
+        "source_hash": "eea67801e451dd34244ea9aa8c57014689cfd11303ef3e24fb64c31a93cf3d6f"
+      }
     }
   ],
   "assumptions": [],
-  "invariants": [],
-  "decisions": [],
+  "invariants": [
+    {
+      "id": "INVARIANT-59f66a50",
+      "text": "GitHub OAuth tokens remain server-side, receive no write permissions, are never logged, and are never exposed to the browser.",
+      "source": "SPEC.md",
+      "recorded_at": "2026-11-10T09:09:10.327Z",
+      "paths": [],
+      "tags": []
+    }
+  ],
+  "decisions": [
+    {
+      "id": "DECISION-34164c15",
+      "title": "Use a single Next.js application",
+      "text": "Use Next.js App Router with TypeScript for the RepoPulse UI and server routes, PostgreSQL for durable state, and the GitHub REST API as the canonical public repository source. Avoid Redis, queues, schedulers, microservices, and LLM APIs in the first release.",
+      "status": "accepted",
+      "source": "SPEC.md",
+      "recorded_at": "2026-11-10T09:09:10.067Z",
+      "paths": [],
+      "tags": []
+    },
+    {
+      "id": "DECISION-db93e9f0",
+      "title": "Use deterministic repository health scoring",
+      "text": "Health scoring must be deterministic, transparent, reproducible from a normalized repository snapshot, and shown with component values and freshness rather than presented as a claim about code quality.",
+      "status": "accepted",
+      "source": "SPEC.md",
+      "recorded_at": "2026-11-10T09:09:10.203Z",
+      "paths": [],
+      "tags": []
+    }
+  ],
   "knowledge": [],
   "tasks": [
     {
       "id": "SPEC-1",
       "outcome": "Produce an approved, implementation-ready product specification",
-      "state": "active",
+      "state": "done",
       "risk": "medium",
       "owner": null,
       "scope": [
@@ -137,8 +175,13 @@
           "id": "independent-review",
           "command": "",
           "mandatory": true,
-          "status": "pending",
-          "evidence": null,
+          "status": "pass",
+          "evidence": {
+            "human": "Rishik Kumar",
+            "reason": "Approved RepoPulse scope, constraints, acceptance criteria, and production MVP boundaries.",
+            "source_hash": "a7fe66086fb9f5de7aaa537e94bf35c09cdf8aeb9c5af96d80c7a0784752b86b",
+            "observed_at": "2026-11-10T09:09:09.929Z"
+          },
           "kind": "review"
         }
       ],
@@ -148,7 +191,237 @@
       "failures": [],
       "limitations": [],
       "created_at": "2026-11-10T09:07:15.321Z",
-      "updated_at": "2026-11-10T09:07:56.352Z"
+      "updated_at": "2026-11-10T09:09:09.929Z"
+    },
+    {
+      "id": "M0",
+      "outcome": "Create the Next.js application foundation, design tokens, environment contract, and quality checks without product data flows.",
+      "state": "queued",
+      "risk": "medium",
+      "owner": null,
+      "scope": [],
+      "dependencies": [],
+      "requirements": [
+        "NFR-1",
+        "NFR-7",
+        "NFR-8",
+        "AC-9"
+      ],
+      "inputs": [],
+      "environment": [],
+      "scenarios": [],
+      "gates": [
+        {
+          "id": "foundation",
+          "kind": "command",
+          "command": "npm run lint && npm run typecheck && npm test -- --runInBand",
+          "mandatory": true,
+          "status": "pending",
+          "evidence": null
+        },
+        {
+          "id": "independent-review",
+          "kind": "review",
+          "command": "",
+          "mandatory": true,
+          "status": "pending",
+          "evidence": null
+        }
+      ],
+      "next_action": "Run the task pre-flight.",
+      "blocker": null,
+      "notes": [],
+      "failures": [],
+      "limitations": [],
+      "created_at": "2026-11-10T09:09:16.268Z",
+      "updated_at": "2026-11-10T09:09:16.268Z"
+    },
+    {
+      "id": "M1",
+      "outcome": "Implement the public repository search and detail experience with validated GitHub reads, cache-aware freshness, loading states, and upstream error handling.",
+      "state": "queued",
+      "risk": "medium",
+      "owner": null,
+      "scope": [],
+      "dependencies": [],
+      "requirements": [
+        "FR-1",
+        "FR-2",
+        "FR-3",
+        "FR-6",
+        "FR-7",
+        "FR-11",
+        "FR-12",
+        "FR-13",
+        "NFR-2",
+        "NFR-3",
+        "AC-1",
+        "AC-2",
+        "AC-6"
+      ],
+      "inputs": [],
+      "environment": [],
+      "scenarios": [],
+      "gates": [
+        {
+          "id": "github-flow",
+          "kind": "command",
+          "command": "npm test -- --runInBand",
+          "mandatory": true,
+          "status": "pending",
+          "evidence": null
+        },
+        {
+          "id": "independent-review",
+          "kind": "review",
+          "command": "",
+          "mandatory": true,
+          "status": "pending",
+          "evidence": null
+        }
+      ],
+      "next_action": "Run the task pre-flight.",
+      "blocker": null,
+      "notes": [],
+      "failures": [],
+      "limitations": [],
+      "created_at": "2026-11-10T09:09:21.637Z",
+      "updated_at": "2026-11-10T09:09:21.638Z"
+    },
+    {
+      "id": "M2",
+      "outcome": "Implement database migrations, GitHub OAuth, server-only session handling, and ownership-safe watchlists.",
+      "state": "queued",
+      "risk": "high",
+      "owner": null,
+      "scope": [],
+      "dependencies": [],
+      "requirements": [
+        "FR-8",
+        "FR-9",
+        "NFR-4",
+        "NFR-5",
+        "AC-4"
+      ],
+      "inputs": [],
+      "environment": [],
+      "scenarios": [],
+      "gates": [
+        {
+          "id": "auth-watchlist",
+          "kind": "command",
+          "command": "npm test -- --runInBand",
+          "mandatory": true,
+          "status": "pending",
+          "evidence": null
+        },
+        {
+          "id": "independent-review",
+          "kind": "review",
+          "command": "",
+          "mandatory": true,
+          "status": "pending",
+          "evidence": null
+        }
+      ],
+      "next_action": "Run the task pre-flight.",
+      "blocker": null,
+      "notes": [],
+      "failures": [],
+      "limitations": [],
+      "created_at": "2026-11-10T09:09:21.848Z",
+      "updated_at": "2026-11-10T09:09:21.848Z"
+    },
+    {
+      "id": "M3",
+      "outcome": "Implement the deterministic health score, transparent breakdown, freshness semantics, and repository comparison flow.",
+      "state": "queued",
+      "risk": "medium",
+      "owner": null,
+      "scope": [],
+      "dependencies": [],
+      "requirements": [
+        "FR-4",
+        "FR-5",
+        "FR-10",
+        "NFR-6",
+        "AC-3",
+        "AC-5"
+      ],
+      "inputs": [],
+      "environment": [],
+      "scenarios": [],
+      "gates": [
+        {
+          "id": "scoring-comparison",
+          "kind": "command",
+          "command": "npm test -- --runInBand",
+          "mandatory": true,
+          "status": "pending",
+          "evidence": null
+        },
+        {
+          "id": "independent-review",
+          "kind": "review",
+          "command": "",
+          "mandatory": true,
+          "status": "pending",
+          "evidence": null
+        }
+      ],
+      "next_action": "Run the task pre-flight.",
+      "blocker": null,
+      "notes": [],
+      "failures": [],
+      "limitations": [],
+      "created_at": "2026-11-10T09:09:22.024Z",
+      "updated_at": "2026-11-10T09:09:22.024Z"
+    },
+    {
+      "id": "M4",
+      "outcome": "Harden the production application, document setup and limitations, and verify accessibility, security boundaries, and deployment readiness.",
+      "state": "queued",
+      "risk": "high",
+      "owner": null,
+      "scope": [],
+      "dependencies": [],
+      "requirements": [
+        "NFR-1",
+        "NFR-7",
+        "NFR-8",
+        "NFR-9",
+        "AC-7",
+        "AC-8",
+        "AC-9"
+      ],
+      "inputs": [],
+      "environment": [],
+      "scenarios": [],
+      "gates": [
+        {
+          "id": "release",
+          "kind": "command",
+          "command": "npm run lint && npm run typecheck && npm test -- --runInBand && npm run build",
+          "mandatory": true,
+          "status": "pending",
+          "evidence": null
+        },
+        {
+          "id": "independent-review",
+          "kind": "review",
+          "command": "",
+          "mandatory": true,
+          "status": "pending",
+          "evidence": null
+        }
+      ],
+      "next_action": "Run the task pre-flight.",
+      "blocker": null,
+      "notes": [],
+      "failures": [],
+      "limitations": [],
+      "created_at": "2026-11-10T09:09:22.202Z",
+      "updated_at": "2026-11-10T09:09:22.203Z"
     }
   ],
   "learning_proposals": [],
@@ -160,14 +433,14 @@
   "incidents": [],
   "discovery": null,
   "checkpoint": {
-    "at": "2026-11-10T09:08:13.926Z",
+    "at": "2026-11-10T09:09:27.585Z",
     "revision": {
-      "commit": "9b10f76e7ad72169b4fff10bdd44dd618bf564c5",
-      "dirty": false,
+      "commit": "6aa7fceb2effa5f868e87acfdb39528d4c313e04",
+      "dirty": true,
       "source_hash": "a7fe66086fb9f5de7aaa537e94bf35c09cdf8aeb9c5af96d80c7a0784752b86b"
     },
-    "active_task": "SPEC-1",
-    "next_action": "Ask the human to review SPEC.md, then record explicit specification approval."
+    "active_task": null,
+    "next_action": "Finish defining requirement-linked tasks, then run genesis plan check."
   },
   "legacy": null
 }
