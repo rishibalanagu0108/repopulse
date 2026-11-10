@@ -9,7 +9,7 @@
     "non_goals": [],
     "trust_boundary": "local repository",
     "created_at": "2026-11-10T09:07:15.311Z",
-    "updated_at": "2026-11-10T09:38:15.377Z"
+    "updated_at": "2026-11-10T09:38:29.283Z"
   },
   "policy": {
     "ponytail": "full",
@@ -288,8 +288,14 @@
           "kind": "command",
           "command": "npm test -- --runInBand",
           "mandatory": true,
-          "status": "pending",
-          "evidence": null
+          "status": "pass",
+          "evidence": {
+            "path": ".genesis/evidence/M1-github-flow-f95ce5f6-23b3-462e-9a73-aa80cc3529ff.json",
+            "hash": "9782ba33cc427c48719fd66e101906857b8e1ebafc92454660bb5a12309ff699",
+            "source_hash": "99aa49c7c1c12f47509762ae9c032f2e7041c9f4ee8938bb0f085473b9fecf71",
+            "config_hash": "f6554b54e5fd3038f75621ff4f81388d8bdc10ff49de26bc6bc31a127681f591",
+            "observed_at": "2026-11-10T09:38:22.159Z"
+          }
         },
         {
           "id": "independent-review",
@@ -569,6 +575,30 @@
       "cost": null,
       "stop_reason": null,
       "ended_at": "2026-11-10T09:35:23.407Z"
+    },
+    {
+      "id": "f95ce5f6-23b3-462e-9a73-aa80cc3529ff",
+      "task": "M1",
+      "kind": "gate",
+      "command": "npm test -- --runInBand",
+      "timeout": 120000,
+      "authorization": null,
+      "pid": 50076,
+      "child_pid": 50164,
+      "started_at": "2026-11-10T09:38:20.041Z",
+      "status": "passed",
+      "before_hash": "99aa49c7c1c12f47509762ae9c032f2e7041c9f4ee8938bb0f085473b9fecf71",
+      "config_hash": "f6554b54e5fd3038f75621ff4f81388d8bdc10ff49de26bc6bc31a127681f591",
+      "environment": {
+        "node": "v24.13.0",
+        "platform": "linux",
+        "arch": "x64",
+        "verifier": "358371454f03eb4fdfd3eda3cb1d18cb1dd8fe9445404bb3d3047267b3977eb9",
+        "variables": {}
+      },
+      "cost": null,
+      "stop_reason": null,
+      "ended_at": "2026-11-10T09:38:22.159Z"
     }
   ],
   "authorizations": [],
@@ -576,9 +606,9 @@
   "incidents": [],
   "discovery": null,
   "checkpoint": {
-    "at": "2026-11-10T09:38:15.332Z",
+    "at": "2026-11-10T09:38:29.251Z",
     "revision": {
-      "commit": "26b53259a8971ca650b20abb86457526d120f197",
+      "commit": "dd354898690032d3c967d71a49b23bfa12c49f0a",
       "dirty": true,
       "source_hash": "99aa49c7c1c12f47509762ae9c032f2e7041c9f4ee8938bb0f085473b9fecf71"
     },
