@@ -13,11 +13,7 @@
     "format": "prettier --write ."
   },
   "dependencies": {
-    "@neondatabase/serverless": "^1.2.0",
-    "@octokit/rest": "^22.0.1",
-    "drizzle-orm": "^0.45.4",
     "next": "16.4.6",
-    "next-auth": "^4.24.15",
     "react": "19.3.0",
     "react-dom": "19.3.0",
     "zod": "^4.6.7"

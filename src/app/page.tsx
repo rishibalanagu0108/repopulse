@@ -1,3 +1,5 @@
+import { RepositorySearch } from "@/components/repository-search";
+
 export default function Home() {
   return (
     <div className="app-frame">
@@ -42,20 +44,7 @@ export default function Home() {
               Activity, maintenance, and momentum in one clear snapshot.
             </p>
           </div>
-          <form className="search-form">
-            <label htmlFor="repository-search">Search public GitHub repositories</label>
-            <div className="search-row">
-              <input
-                id="repository-search"
-                name="repository"
-                placeholder="Try facebook/react"
-                type="search"
-              />
-              <button className="primary-button" type="submit">
-                Inspect repository
-              </button>
-            </div>
-          </form>
+          <RepositorySearch />
         </section>
 
         <section className="section-block" aria-labelledby="sample-heading">
