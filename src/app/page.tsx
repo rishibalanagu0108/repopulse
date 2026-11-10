@@ -12,12 +12,12 @@ export default function Home() {
           <a className="rail-link is-active" href="#overview">
             Overview
           </a>
-          <a className="rail-link" href="#watchlist">
-            Watchlist <span className="rail-count">04</span>
-          </a>
-          <a className="rail-link" href="#compare">
-            Compare
-          </a>
+          <span className="rail-link is-planned">
+            Watchlist <span className="rail-count">M2</span>
+          </span>
+          <span className="rail-link is-planned">
+            Compare <span className="rail-count">M3</span>
+          </span>
         </nav>
         <div className="rail-footer">
           <span className="status-dot" aria-hidden="true" />
@@ -31,9 +31,7 @@ export default function Home() {
             <p className="eyebrow">Repository intelligence</p>
             <h1>Know what you&apos;re adopting.</h1>
           </div>
-          <button className="profile-button" type="button">
-            Sign in with GitHub <span aria-hidden="true">↗</span>
-          </button>
+          <span className="profile-button is-planned">GitHub sign-in · M2</span>
         </header>
 
         <section className="search-panel" aria-labelledby="search-heading">
