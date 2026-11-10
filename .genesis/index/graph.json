@@ -1,17 +1,548 @@
 {
   "schemaVersion": 2,
   "project": "repopulse",
-  "revision": "6aa7fceb2effa5f868e87acfdb39528d4c313e04",
-  "sourceHash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "revision": "05501123610069437173a68e02323d9c1c561302",
+  "sourceHash": "12f85fa5b8b14f39ece07239c7975e9589965371f3c5918413f60726ab7350d1",
   "provenance": {
     "tool": "genesis-graphizer",
     "method": "static-analysis",
     "confidenceScale": "0..1"
   },
-  "nodes": [],
-  "edges": [],
+  "nodes": [
+    {
+      "id": "file:eslint.config.mjs",
+      "type": "file",
+      "label": "eslint.config.mjs",
+      "path": "eslint.config.mjs",
+      "language": "javascript",
+      "confidence": 1,
+      "extractor": "filesystem",
+      "contentHash": "870f1adccecf3051cbcd9fd307cef51d7633cf510979c181a81f4b1797273493"
+    },
+    {
+      "id": "file:next-env.d.ts",
+      "type": "file",
+      "label": "next-env.d.ts",
+      "path": "next-env.d.ts",
+      "language": "javascript",
+      "confidence": 1,
+      "extractor": "filesystem",
+      "contentHash": "1862ac4bbbc5192d4bf562161df66ea547ed3e67173100656ab606ae9797db2b"
+    },
+    {
+      "id": "file:next.config.ts",
+      "type": "file",
+      "label": "next.config.ts",
+      "path": "next.config.ts",
+      "language": "javascript",
+      "confidence": 1,
+      "extractor": "filesystem",
+      "contentHash": "17145a9822ec351b92b8a5f8d3a709a531c8690ed92d397a4405ae084ea9acc7"
+    },
+    {
+      "id": "file:scripts/test.mjs",
+      "type": "file",
+      "label": "scripts/test.mjs",
+      "path": "scripts/test.mjs",
+      "language": "javascript",
+      "confidence": 1,
+      "extractor": "filesystem",
+      "contentHash": "38d7ff2463ff7d5f2d0a43c27caa0b6224cd122242f921b1afd65969729093d1"
+    },
+    {
+      "id": "file:src/app/layout.tsx",
+      "type": "file",
+      "label": "src/app/layout.tsx",
+      "path": "src/app/layout.tsx",
+      "language": "javascript",
+      "confidence": 1,
+      "extractor": "filesystem",
+      "contentHash": "d3c4096c55d0f09b9691d379c840800ef787fa91b24e78501d334b0ebaa376f6"
+    },
+    {
+      "id": "file:src/app/page.tsx",
+      "type": "file",
+      "label": "src/app/page.tsx",
+      "path": "src/app/page.tsx",
+      "language": "javascript",
+      "confidence": 1,
+      "extractor": "filesystem",
+      "contentHash": "261cc5ec885b2373408f3aa5b07c96a87d893e35e139b1a2f5df62c5991aff84"
+    },
+    {
+      "id": "file:src/lib/env.test.ts",
+      "type": "file",
+      "label": "src/lib/env.test.ts",
+      "path": "src/lib/env.test.ts",
+      "language": "javascript",
+      "confidence": 1,
+      "extractor": "filesystem",
+      "contentHash": "a0aef9077165f57d84de73b70f305823ab88ff9a3ac12a81ab13e8fb62784094"
+    },
+    {
+      "id": "file:src/lib/env.ts",
+      "type": "file",
+      "label": "src/lib/env.ts",
+      "path": "src/lib/env.ts",
+      "language": "javascript",
+      "confidence": 1,
+      "extractor": "filesystem",
+      "contentHash": "c1d3a6eceb6cbd6a795c2823fc58f197409244bb8d7ad331240b40e5e300f1a4"
+    },
+    {
+      "id": "file:vitest.config.ts",
+      "type": "file",
+      "label": "vitest.config.ts",
+      "path": "vitest.config.ts",
+      "language": "javascript",
+      "confidence": 1,
+      "extractor": "filesystem",
+      "contentHash": "e7e3d44156fd9697c575240c73a566279d88da05e518f6d48f31db4ba39ed01a"
+    },
+    {
+      "id": "package:npm:eslint",
+      "type": "package",
+      "label": "eslint",
+      "ecosystem": "npm",
+      "confidence": 0.85,
+      "extractor": "import",
+      "contentHash": "245c9047c2f79e3ba330b5065f9f54952921b1a90136ed2eae84bfa733ef7d1a"
+    },
+    {
+      "id": "package:npm:eslint-config-next",
+      "type": "package",
+      "label": "eslint-config-next",
+      "ecosystem": "npm",
+      "confidence": 0.85,
+      "extractor": "import",
+      "contentHash": "6975661673e2136a1a2ad8a889d3a0fccc48505d867b9799bd3baabc83dd2e88"
+    },
+    {
+      "id": "package:npm:next",
+      "type": "package",
+      "label": "next",
+      "ecosystem": "npm",
+      "confidence": 0.85,
+      "extractor": "import",
+      "contentHash": "829b826fa053ff800eae160000b068ad0153105748bc231e8db5205b1ea83780"
+    },
+    {
+      "id": "package:npm:vitest",
+      "type": "package",
+      "label": "vitest",
+      "ecosystem": "npm",
+      "confidence": 0.85,
+      "extractor": "import",
+      "contentHash": "70ffaa147e323acefdbeceb958c431f027b3b1973fa9de1cc318b49c22e0f7f1"
+    },
+    {
+      "id": "package:npm:zod",
+      "type": "package",
+      "label": "zod",
+      "ecosystem": "npm",
+      "confidence": 0.85,
+      "extractor": "import",
+      "contentHash": "6c2ce044747b711f23b58dd1532c08ec73eb6333bd1a1352687c968b770654a1"
+    },
+    {
+      "id": "runtime:javascript:child_process",
+      "type": "runtime",
+      "label": "child_process",
+      "language": "javascript",
+      "confidence": 0.85,
+      "extractor": "standard-library",
+      "contentHash": "6e1742450f7f56b80f1004a8a04675b38781504a842956d2dc868e1ff82f444c"
+    },
+    {
+      "id": "symbol:eslint.config.mjs#variable:eslintConfig",
+      "type": "symbol",
+      "kind": "variable",
+      "name": "eslintConfig",
+      "label": "eslintConfig",
+      "path": "eslint.config.mjs",
+      "line": 5,
+      "confidence": 0.8,
+      "extractor": "conservative-js-symbols",
+      "contentHash": "87323993d90c006d5041b84988958593a8323c83a2191a28a5d166b9d3ad02c4"
+    },
+    {
+      "id": "symbol:next.config.ts#variable:nextConfig",
+      "type": "symbol",
+      "kind": "variable",
+      "name": "nextConfig",
+      "label": "nextConfig",
+      "path": "next.config.ts",
+      "line": 3,
+      "confidence": 0.8,
+      "extractor": "conservative-js-symbols",
+      "contentHash": "6c99eeb5f39de68747251e95ab4d5fb9b763f1f251d0329726c1daadf724684c"
+    },
+    {
+      "id": "symbol:scripts/test.mjs#variable:args",
+      "type": "symbol",
+      "kind": "variable",
+      "name": "args",
+      "label": "args",
+      "path": "scripts/test.mjs",
+      "line": 3,
+      "confidence": 0.8,
+      "extractor": "conservative-js-symbols",
+      "contentHash": "bbd41eddff3d582ea1e123e49338fc4804e7c8592e132d8de7fb22c563a20df7"
+    },
+    {
+      "id": "symbol:scripts/test.mjs#variable:result",
+      "type": "symbol",
+      "kind": "variable",
+      "name": "result",
+      "label": "result",
+      "path": "scripts/test.mjs",
+      "line": 4,
+      "confidence": 0.8,
+      "extractor": "conservative-js-symbols",
+      "contentHash": "6c6d6b872af472caa520b3e0b31e70f8b866aadbbecbeeb84bee291751f2e123"
+    },
+    {
+      "id": "symbol:src/app/layout.tsx#function:RootLayout",
+      "type": "symbol",
+      "kind": "function",
+      "name": "RootLayout",
+      "label": "RootLayout",
+      "path": "src/app/layout.tsx",
+      "line": 21,
+      "confidence": 0.8,
+      "extractor": "conservative-js-symbols",
+      "contentHash": "b3f96339ba215ebd6ba503ea8fca4a7c61b3c35014e0d8f3c377caed0cbc1890"
+    },
+    {
+      "id": "symbol:src/app/layout.tsx#variable:geistMono",
+      "type": "symbol",
+      "kind": "variable",
+      "name": "geistMono",
+      "label": "geistMono",
+      "path": "src/app/layout.tsx",
+      "line": 10,
+      "confidence": 0.8,
+      "extractor": "conservative-js-symbols",
+      "contentHash": "c9b3d48161f64a947806c1f3b1a9cbd6a825b983850c514c73480140313b90c3"
+    },
+    {
+      "id": "symbol:src/app/layout.tsx#variable:geistSans",
+      "type": "symbol",
+      "kind": "variable",
+      "name": "geistSans",
+      "label": "geistSans",
+      "path": "src/app/layout.tsx",
+      "line": 5,
+      "confidence": 0.8,
+      "extractor": "conservative-js-symbols",
+      "contentHash": "c1a9cbee029babdefddb2c29493f99994e113ba4ecafa9e2d4093a857e8f1f66"
+    },
+    {
+      "id": "symbol:src/app/layout.tsx#variable:metadata",
+      "type": "symbol",
+      "kind": "variable",
+      "name": "metadata",
+      "label": "metadata",
+      "path": "src/app/layout.tsx",
+      "line": 15,
+      "confidence": 0.8,
+      "extractor": "conservative-js-symbols",
+      "contentHash": "1c4009dcdeca39fd5c9228279837d6284c5aefaa467126841e57afc26ba65eec"
+    },
+    {
+      "id": "symbol:src/app/page.tsx#function:Home",
+      "type": "symbol",
+      "kind": "function",
+      "name": "Home",
+      "label": "Home",
+      "path": "src/app/page.tsx",
+      "line": 1,
+      "confidence": 0.8,
+      "extractor": "conservative-js-symbols",
+      "contentHash": "e1a106fbcc131f9a29bfcc7ca368c0c2e8175b30674f7f2c893aff7089d9e886"
+    },
+    {
+      "id": "symbol:src/lib/env.ts#variable:env",
+      "type": "symbol",
+      "kind": "variable",
+      "name": "env",
+      "label": "env",
+      "path": "src/lib/env.ts",
+      "line": 11,
+      "confidence": 0.8,
+      "extractor": "conservative-js-symbols",
+      "contentHash": "ba60bb4e7f1bc693b8c57f6d05c9291946eb68c184e5606c353f876a2b2e81c4"
+    },
+    {
+      "id": "symbol:src/lib/env.ts#variable:envSchema",
+      "type": "symbol",
+      "kind": "variable",
+      "name": "envSchema",
+      "label": "envSchema",
+      "path": "src/lib/env.ts",
+      "line": 3,
+      "confidence": 0.8,
+      "extractor": "conservative-js-symbols",
+      "contentHash": "6b0358e26ab2dc25188776022de4c9c4dcf0b7544f303d7754458f7bb6d4b399"
+    },
+    {
+      "id": "unresolved:next-env.d.ts:./.next/types/root-params.d.ts",
+      "type": "unresolved",
+      "label": "./.next/types/root-params.d.ts",
+      "confidence": 0.4,
+      "extractor": "import",
+      "contentHash": "d75864d336575d956116db1c2939a98f6374dda85591fc179dfcb7ae63ead7c7"
+    },
+    {
+      "id": "unresolved:next-env.d.ts:./.next/types/routes.d.ts",
+      "type": "unresolved",
+      "label": "./.next/types/routes.d.ts",
+      "confidence": 0.4,
+      "extractor": "import",
+      "contentHash": "fc7907318a7a248fc4b5c05ab3e149a7afc37fc3581567cb7c1b9b4bb9078933"
+    },
+    {
+      "id": "unresolved:src/app/layout.tsx:./globals.css",
+      "type": "unresolved",
+      "label": "./globals.css",
+      "confidence": 0.4,
+      "extractor": "import",
+      "contentHash": "359da9e98a547a8fdc70be4e9ce6d819a2b016e4266072ffb56c2d0d8e8be1b8"
+    }
+  ],
+  "edges": [
+    {
+      "type": "defines",
+      "source": "file:eslint.config.mjs",
+      "target": "symbol:eslint.config.mjs#variable:eslintConfig",
+      "line": 5,
+      "resolved": true,
+      "confidence": 0.8,
+      "extractor": "conservative-js-symbols"
+    },
+    {
+      "type": "defines",
+      "source": "file:next.config.ts",
+      "target": "symbol:next.config.ts#variable:nextConfig",
+      "line": 3,
+      "resolved": true,
+      "confidence": 0.8,
+      "extractor": "conservative-js-symbols"
+    },
+    {
+      "type": "defines",
+      "source": "file:scripts/test.mjs",
+      "target": "symbol:scripts/test.mjs#variable:args",
+      "line": 3,
+      "resolved": true,
+      "confidence": 0.8,
+      "extractor": "conservative-js-symbols"
+    },
+    {
+      "type": "defines",
+      "source": "file:scripts/test.mjs",
+      "target": "symbol:scripts/test.mjs#variable:result",
+      "line": 4,
+      "resolved": true,
+      "confidence": 0.8,
+      "extractor": "conservative-js-symbols"
+    },
+    {
+      "type": "defines",
+      "source": "file:src/app/layout.tsx",
+      "target": "symbol:src/app/layout.tsx#function:RootLayout",
+      "line": 21,
+      "resolved": true,
+      "confidence": 0.8,
+      "extractor": "conservative-js-symbols"
+    },
+    {
+      "type": "defines",
+      "source": "file:src/app/layout.tsx",
+      "target": "symbol:src/app/layout.tsx#variable:geistMono",
+      "line": 10,
+      "resolved": true,
+      "confidence": 0.8,
+      "extractor": "conservative-js-symbols"
+    },
+    {
+      "type": "defines",
+      "source": "file:src/app/layout.tsx",
+      "target": "symbol:src/app/layout.tsx#variable:geistSans",
+      "line": 5,
+      "resolved": true,
+      "confidence": 0.8,
+      "extractor": "conservative-js-symbols"
+    },
+    {
+      "type": "defines",
+      "source": "file:src/app/layout.tsx",
+      "target": "symbol:src/app/layout.tsx#variable:metadata",
+      "line": 15,
+      "resolved": true,
+      "confidence": 0.8,
+      "extractor": "conservative-js-symbols"
+    },
+    {
+      "type": "defines",
+      "source": "file:src/app/page.tsx",
+      "target": "symbol:src/app/page.tsx#function:Home",
+      "line": 1,
+      "resolved": true,
+      "confidence": 0.8,
+      "extractor": "conservative-js-symbols"
+    },
+    {
+      "type": "defines",
+      "source": "file:src/lib/env.ts",
+      "target": "symbol:src/lib/env.ts#variable:env",
+      "line": 11,
+      "resolved": true,
+      "confidence": 0.8,
+      "extractor": "conservative-js-symbols"
+    },
+    {
+      "type": "defines",
+      "source": "file:src/lib/env.ts",
+      "target": "symbol:src/lib/env.ts#variable:envSchema",
+      "line": 3,
+      "resolved": true,
+      "confidence": 0.8,
+      "extractor": "conservative-js-symbols"
+    },
+    {
+      "type": "imports",
+      "source": "file:eslint.config.mjs",
+      "target": "package:npm:eslint-config-next",
+      "specifier": "eslint-config-next/core-web-vitals",
+      "line": 2,
+      "resolved": false,
+      "confidence": 0.5,
+      "extractor": "javascript-imports"
+    },
+    {
+      "type": "imports",
+      "source": "file:eslint.config.mjs",
+      "target": "package:npm:eslint-config-next",
+      "specifier": "eslint-config-next/typescript",
+      "line": 3,
+      "resolved": false,
+      "confidence": 0.5,
+      "extractor": "javascript-imports"
+    },
+    {
+      "type": "imports",
+      "source": "file:eslint.config.mjs",
+      "target": "package:npm:eslint",
+      "specifier": "eslint/config",
+      "line": 1,
+      "resolved": false,
+      "confidence": 0.5,
+      "extractor": "javascript-imports"
+    },
+    {
+      "type": "imports",
+      "source": "file:next-env.d.ts",
+      "target": "unresolved:next-env.d.ts:./.next/types/root-params.d.ts",
+      "specifier": "./.next/types/root-params.d.ts",
+      "line": 4,
+      "resolved": false,
+      "confidence": 0.4,
+      "extractor": "javascript-imports"
+    },
+    {
+      "type": "imports",
+      "source": "file:next-env.d.ts",
+      "target": "unresolved:next-env.d.ts:./.next/types/routes.d.ts",
+      "specifier": "./.next/types/routes.d.ts",
+      "line": 3,
+      "resolved": false,
+      "confidence": 0.4,
+      "extractor": "javascript-imports"
+    },
+    {
+      "type": "imports",
+      "source": "file:next.config.ts",
+      "target": "package:npm:next",
+      "specifier": "next",
+      "line": 1,
+      "resolved": false,
+      "confidence": 0.5,
+      "extractor": "javascript-imports"
+    },
+    {
+      "type": "imports",
+      "source": "file:scripts/test.mjs",
+      "target": "runtime:javascript:child_process",
+      "specifier": "node:child_process",
+      "line": 1,
+      "resolved": true,
+      "confidence": 0.85,
+      "extractor": "javascript-imports"
+    },
+    {
+      "type": "imports",
+      "source": "file:src/app/layout.tsx",
+      "target": "package:npm:next",
+      "specifier": "next",
+      "line": 1,
+      "resolved": false,
+      "confidence": 0.5,
+      "extractor": "javascript-imports"
+    },
+    {
+      "type": "imports",
+      "source": "file:src/app/layout.tsx",
+      "target": "package:npm:next",
+      "specifier": "next/font/google",
+      "line": 2,
+      "resolved": false,
+      "confidence": 0.5,
+      "extractor": "javascript-imports"
+    },
+    {
+      "type": "imports",
+      "source": "file:src/app/layout.tsx",
+      "target": "unresolved:src/app/layout.tsx:./globals.css",
+      "specifier": "./globals.css",
+      "line": 3,
+      "resolved": false,
+      "confidence": 0.4,
+      "extractor": "javascript-imports"
+    },
+    {
+      "type": "imports",
+      "source": "file:src/lib/env.test.ts",
+      "target": "package:npm:vitest",
+      "specifier": "vitest",
+      "line": 1,
+      "resolved": false,
+      "confidence": 0.5,
+      "extractor": "javascript-imports"
+    },
+    {
+      "type": "imports",
+      "source": "file:src/lib/env.ts",
+      "target": "package:npm:zod",
+      "specifier": "zod",
+      "line": 1,
+      "resolved": false,
+      "confidence": 0.5,
+      "extractor": "javascript-imports"
+    },
+    {
+      "type": "imports",
+      "source": "file:vitest.config.ts",
+      "target": "package:npm:vitest",
+      "specifier": "vitest/config",
+      "line": 1,
+      "resolved": false,
+      "confidence": 0.5,
+      "extractor": "javascript-imports"
+    }
+  ],
   "warnings": [],
   "stats": {
-    "unresolvedCalls": 0
+    "unresolvedCalls": 5
   }
 }

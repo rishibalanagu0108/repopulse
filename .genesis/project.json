@@ -9,7 +9,7 @@
     "non_goals": [],
     "trust_boundary": "local repository",
     "created_at": "2026-11-10T09:07:15.311Z",
-    "updated_at": "2026-11-10T09:20:23.844Z"
+    "updated_at": "2026-11-10T09:21:05.845Z"
   },
   "policy": {
     "ponytail": "full",
@@ -496,14 +496,14 @@
   "incidents": [],
   "discovery": null,
   "checkpoint": {
-    "at": "2026-11-10T09:09:27.585Z",
+    "at": "2026-11-10T09:21:05.735Z",
     "revision": {
-      "commit": "6aa7fceb2effa5f868e87acfdb39528d4c313e04",
-      "dirty": true,
-      "source_hash": "a7fe66086fb9f5de7aaa537e94bf35c09cdf8aeb9c5af96d80c7a0784752b86b"
+      "commit": "05501123610069437173a68e02323d9c1c561302",
+      "dirty": false,
+      "source_hash": "a50f95f8440b4017e2123afb9eced3eb61490d19fefb39631342ed07e3cb59a5"
     },
-    "active_task": null,
-    "next_action": "Finish defining requirement-linked tasks, then run genesis plan check."
+    "active_task": "M0",
+    "next_action": "Run the task pre-flight."
   },
   "legacy": null
 }
