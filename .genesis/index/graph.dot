@@ -2,9 +2,11 @@ digraph genesis {
   rankdir=LR;
   node [shape=box,fontname="system-ui"];
   "file:eslint.config.mjs" [label="eslint.config.mjs",class="file"];
+  "file:neon.ts" [label="neon.ts",class="file"];
   "file:next-env.d.ts" [label="next-env.d.ts",class="file"];
   "file:next.config.ts" [label="next.config.ts",class="file"];
   "file:scripts/test.mjs" [label="scripts/test.mjs",class="file"];
+  "file:src/app/api/health/database/route.ts" [label="src/app/api/health/database/route.ts",class="file"];
   "file:src/app/api/repositories/[owner]/[name]/route.ts" [label="src/app/api/repositories/[owner]/[name]/route.ts",class="file"];
   "file:src/app/api/repositories/search/route.ts" [label="src/app/api/repositories/search/route.ts",class="file"];
   "file:src/app/layout.tsx" [label="src/app/layout.tsx",class="file"];
@@ -12,11 +14,14 @@ digraph genesis {
   "file:src/app/repository/[owner]/[name]/loading.tsx" [label="src/app/repository/[owner]/[name]/loading.tsx",class="file"];
   "file:src/app/repository/[owner]/[name]/page.tsx" [label="src/app/repository/[owner]/[name]/page.tsx",class="file"];
   "file:src/components/repository-search.tsx" [label="src/components/repository-search.tsx",class="file"];
+  "file:src/lib/db.ts" [label="src/lib/db.ts",class="file"];
   "file:src/lib/env.test.ts" [label="src/lib/env.test.ts",class="file"];
   "file:src/lib/env.ts" [label="src/lib/env.ts",class="file"];
   "file:src/lib/github.test.ts" [label="src/lib/github.test.ts",class="file"];
   "file:src/lib/github.ts" [label="src/lib/github.ts",class="file"];
   "file:vitest.config.ts" [label="vitest.config.ts",class="file"];
+  "package:npm:@neon/config" [label="@neon/config",class="package"];
+  "package:npm:@neondatabase/serverless" [label="@neondatabase/serverless",class="package"];
   "package:npm:eslint" [label="eslint",class="package"];
   "package:npm:eslint-config-next" [label="eslint-config-next",class="package"];
   "package:npm:next" [label="next",class="package"];
@@ -29,6 +34,7 @@ digraph genesis {
   "symbol:next.config.ts#variable:nextConfig" [label="nextConfig",class="symbol"];
   "symbol:scripts/test.mjs#variable:args" [label="args",class="symbol"];
   "symbol:scripts/test.mjs#variable:result" [label="result",class="symbol"];
+  "symbol:src/app/api/health/database/route.ts#function:GET" [label="GET",class="symbol"];
   "symbol:src/app/api/repositories/[owner]/[name]/route.ts#function:GET" [label="GET",class="symbol"];
   "symbol:src/app/api/repositories/search/route.ts#function:GET" [label="GET",class="symbol"];
   "symbol:src/app/layout.tsx#function:RootLayout" [label="RootLayout",class="symbol"];
@@ -40,6 +46,7 @@ digraph genesis {
   "symbol:src/app/repository/[owner]/[name]/page.tsx#function:RepositoryPage" [label="RepositoryPage",class="symbol"];
   "symbol:src/components/repository-search.tsx#function:RepositorySearch" [label="RepositorySearch",class="symbol"];
   "symbol:src/components/repository-search.tsx#type:SearchResult" [label="SearchResult",class="symbol"];
+  "symbol:src/lib/db.ts#function:getDb" [label="getDb",class="symbol"];
   "symbol:src/lib/env.ts#variable:env" [label="env",class="symbol"];
   "symbol:src/lib/env.ts#variable:envSchema" [label="envSchema",class="symbol"];
   "symbol:src/lib/github.ts#class:GitHubApiError" [label="GitHubApiError",class="symbol"];
@@ -59,6 +66,7 @@ digraph genesis {
   "unresolved:next-env.d.ts:./.next/types/root-params.d.ts" [label="./.next/types/root-params.d.ts",class="unresolved"];
   "unresolved:next-env.d.ts:./.next/types/routes.d.ts" [label="./.next/types/routes.d.ts",class="unresolved"];
   "unresolved:src/app/layout.tsx:./globals.css" [label="./globals.css",class="unresolved"];
+  "symbol:src/app/api/health/database/route.ts#function:GET" -> "symbol:src/lib/db.ts#function:getDb" [label="calls"];
   "symbol:src/app/api/repositories/[owner]/[name]/route.ts#function:GET" -> "symbol:src/lib/github.ts#function:getRepositorySnapshot" [label="calls"];
   "symbol:src/app/api/repositories/search/route.ts#function:GET" -> "symbol:src/lib/github.ts#function:searchRepositories" [label="calls"];
   "symbol:src/app/repository/[owner]/[name]/page.tsx#function:RepositoryPage" -> "symbol:src/lib/github.ts#function:getRepositorySnapshot" [label="calls"];
@@ -72,6 +80,7 @@ digraph genesis {
   "file:next.config.ts" -> "symbol:next.config.ts#variable:nextConfig" [label="defines"];
   "file:scripts/test.mjs" -> "symbol:scripts/test.mjs#variable:args" [label="defines"];
   "file:scripts/test.mjs" -> "symbol:scripts/test.mjs#variable:result" [label="defines"];
+  "file:src/app/api/health/database/route.ts" -> "symbol:src/app/api/health/database/route.ts#function:GET" [label="defines"];
   "file:src/app/api/repositories/[owner]/[name]/route.ts" -> "symbol:src/app/api/repositories/[owner]/[name]/route.ts#function:GET" [label="defines"];
   "file:src/app/api/repositories/search/route.ts" -> "symbol:src/app/api/repositories/search/route.ts#function:GET" [label="defines"];
   "file:src/app/layout.tsx" -> "symbol:src/app/layout.tsx#function:RootLayout" [label="defines"];
@@ -83,6 +92,7 @@ digraph genesis {
   "file:src/app/repository/[owner]/[name]/page.tsx" -> "symbol:src/app/repository/[owner]/[name]/page.tsx#function:RepositoryPage" [label="defines"];
   "file:src/components/repository-search.tsx" -> "symbol:src/components/repository-search.tsx#function:RepositorySearch" [label="defines"];
   "file:src/components/repository-search.tsx" -> "symbol:src/components/repository-search.tsx#type:SearchResult" [label="defines"];
+  "file:src/lib/db.ts" -> "symbol:src/lib/db.ts#function:getDb" [label="defines"];
   "file:src/lib/env.ts" -> "symbol:src/lib/env.ts#variable:env" [label="defines"];
   "file:src/lib/env.ts" -> "symbol:src/lib/env.ts#variable:envSchema" [label="defines"];
   "file:src/lib/github.ts" -> "symbol:src/lib/github.ts#class:GitHubApiError" [label="defines"];
@@ -102,10 +112,12 @@ digraph genesis {
   "file:eslint.config.mjs" -> "package:npm:eslint-config-next" [label="imports"];
   "file:eslint.config.mjs" -> "package:npm:eslint-config-next" [label="imports"];
   "file:eslint.config.mjs" -> "package:npm:eslint" [label="imports"];
+  "file:neon.ts" -> "package:npm:@neon/config" [label="imports"];
   "file:next-env.d.ts" -> "unresolved:next-env.d.ts:./.next/types/root-params.d.ts" [label="imports"];
   "file:next-env.d.ts" -> "unresolved:next-env.d.ts:./.next/types/routes.d.ts" [label="imports"];
   "file:next.config.ts" -> "package:npm:next" [label="imports"];
   "file:scripts/test.mjs" -> "runtime:javascript:child_process" [label="imports"];
+  "file:src/app/api/health/database/route.ts" -> "file:src/lib/db.ts" [label="imports"];
   "file:src/app/api/repositories/[owner]/[name]/route.ts" -> "file:src/lib/github.ts" [label="imports"];
   "file:src/app/api/repositories/[owner]/[name]/route.ts" -> "package:npm:next" [label="imports"];
   "file:src/app/api/repositories/search/route.ts" -> "file:src/lib/github.ts" [label="imports"];
@@ -119,6 +131,8 @@ digraph genesis {
   "file:src/app/repository/[owner]/[name]/page.tsx" -> "package:npm:next" [label="imports"];
   "file:src/components/repository-search.tsx" -> "package:npm:next" [label="imports"];
   "file:src/components/repository-search.tsx" -> "package:npm:react" [label="imports"];
+  "file:src/lib/db.ts" -> "file:src/lib/env.ts" [label="imports"];
+  "file:src/lib/db.ts" -> "package:npm:@neondatabase/serverless" [label="imports"];
   "file:src/lib/env.test.ts" -> "package:npm:vitest" [label="imports"];
   "file:src/lib/env.ts" -> "package:npm:zod" [label="imports"];
   "file:src/lib/github.test.ts" -> "file:src/lib/github.ts" [label="imports"];
