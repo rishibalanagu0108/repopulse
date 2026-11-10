@@ -9,7 +9,7 @@
     "non_goals": [],
     "trust_boundary": "local repository",
     "created_at": "2026-11-10T09:07:15.311Z",
-    "updated_at": "2026-11-10T09:21:05.845Z"
+    "updated_at": "2026-11-10T09:38:15.377Z"
   },
   "policy": {
     "ponytail": "full",
@@ -25,7 +25,7 @@
   "lifecycle": {
     "phase": "build",
     "status": "active",
-    "active_task": "M0",
+    "active_task": "M1",
     "blocker": null,
     "next_action": "Run the task pre-flight."
   },
@@ -201,7 +201,7 @@
     {
       "id": "M0",
       "outcome": "Create the Next.js application foundation, design tokens, environment contract, and quality checks without product data flows.",
-      "state": "active",
+      "state": "done",
       "risk": "medium",
       "owner": null,
       "scope": [],
@@ -223,11 +223,11 @@
           "mandatory": true,
           "status": "pass",
           "evidence": {
-            "path": ".genesis/evidence/M0-foundation-a2f3aaff-24f1-4788-a618-faa4046e89f0.json",
-            "hash": "82fb1f928774eefa94ea1065ca586abefe75f73c6670618345726e2c6d320677",
-            "source_hash": "2509d917bbe49c7c2ef563c6797bd7e75cedc8dfbd1b68df7a59dbff0195f22d",
+            "path": ".genesis/evidence/M0-foundation-81a8a7a4-de82-4fdb-b6aa-bc90d8ac975b.json",
+            "hash": "6603698c32d57a82e8e9b49612f05a7f273d39ae1c70bd1f2d6fea64c8af4a24",
+            "source_hash": "a50f95f8440b4017e2123afb9eced3eb61490d19fefb39631342ed07e3cb59a5",
             "config_hash": "94ce172416faaaadc2c155245edcd666e986608554c92d0f24bf77057d24bf96",
-            "observed_at": "2026-11-10T09:20:23.817Z"
+            "observed_at": "2026-11-10T09:35:23.407Z"
           }
         },
         {
@@ -235,8 +235,14 @@
           "kind": "review",
           "command": "",
           "mandatory": true,
-          "status": "pending",
-          "evidence": null
+          "status": "pass",
+          "evidence": {
+            "path": ".genesis/evidence/M0-independent-review-95f5590b-65b3-42ae-9252-9e5bc0694528.json",
+            "hash": "6ff89657c16c99509359a9b4167aba8b0185c16b9f2902597aad3f74b590342d",
+            "source_hash": "a50f95f8440b4017e2123afb9eced3eb61490d19fefb39631342ed07e3cb59a5",
+            "config_hash": "94ce172416faaaadc2c155245edcd666e986608554c92d0f24bf77057d24bf96",
+            "observed_at": "2026-11-10T09:35:25.607Z"
+          }
         }
       ],
       "next_action": "Run the task pre-flight.",
@@ -245,7 +251,7 @@
       "failures": [],
       "limitations": [],
       "created_at": "2026-11-10T09:09:16.268Z",
-      "updated_at": "2026-11-10T09:09:16.268Z",
+      "updated_at": "2026-11-10T09:35:25.929Z",
       "base_manifest": {
         "SPEC.md": "1bd5d97c02577b4fc2df5426347c70c33a205752685abc68da239192beb380e9"
       }
@@ -253,7 +259,7 @@
     {
       "id": "M1",
       "outcome": "Implement the public repository search and detail experience with validated GitHub reads, cache-aware freshness, loading states, and upstream error handling.",
-      "state": "queued",
+      "state": "active",
       "risk": "medium",
       "owner": null,
       "scope": [],
@@ -300,7 +306,47 @@
       "failures": [],
       "limitations": [],
       "created_at": "2026-11-10T09:09:21.637Z",
-      "updated_at": "2026-11-10T09:09:21.638Z"
+      "updated_at": "2026-11-10T09:09:21.638Z",
+      "base_manifest": {
+        ".agents/hooks.json": "be797ce29a3091e0ffc89d10faabed15b6b07890d8f051fa8e2f3ff51a7e628d",
+        ".agents/mcp_config.json": "465799fa9f895db572f6e3c48a66b92e1d576dce3ff528cda4c455f36e62e059",
+        ".agents/rules/concord.md": "d3381baa61b9a9de4d281ded8ee5699b612e437834400e47d2ecd90c650df9e9",
+        ".codex/concord.md": "05ead710b6c85420b315a2754bfba7dae69de71056355b075cf64733ad054749",
+        ".cursor/mcp.json": "4d1fa6de798316492e27477783dd8876525093ba183c817d1535beae9ee1365b",
+        ".cursor/rules/concord.mdc": "84c881a962f3b2d377d6949b3245118236e3990aa433e7ebd2d482bd6ab6dffe",
+        ".devin/hooks.v1.json": "c59995ff99c43d9113ebe062d80287e65264d33bbc966b8a67605df0212b6f01",
+        ".devin/mcp_config.json": "7f37130d642b4c2f8d6620002eb172e609f7064993a8fe5aabccd2fdb82826f6",
+        ".env.example": "2e12170f720ef5a9df780e956aa9c7b6ea445c1d6117939261d6ebcf4db538cd",
+        ".gemini/settings.json": "3d7d1d0aa23b3d39ac88d39b88924c4c039f1a2dbe7cd511f90687b122e9ac16",
+        ".github/copilot-instructions.md": "05ead710b6c85420b315a2754bfba7dae69de71056355b075cf64733ad054749",
+        ".github/mcp.json": "935829681c854d0f3ff585505a9ac71270cb1598c2bf6dd228bf9c150ebbf840",
+        ".gitignore": "3d42b175136cee07c85ed763cd356f2417513a6e06a0efe208418f643f710f1d",
+        ".grok/config.toml": "2453b05a6dba36547a9feb2b0d6646e0b3966e464d34887c6bf1c5b2d570fad4",
+        ".mcp.json": "4d1fa6de798316492e27477783dd8876525093ba183c817d1535beae9ee1365b",
+        ".qwen/settings.json": "0e526521ae27994c6beb2894d795d247a0c6dc093e3698d367817d2c7d7d10df",
+        "AGENTS.md": "235615464406cf91b4aedf7133e248cc034826978c17b4ceba383cc36ac5ae63",
+        "CLAUDE.md": "05ead710b6c85420b315a2754bfba7dae69de71056355b075cf64733ad054749",
+        "README.md": "c63a3ff4d1765ab0c74281026ad719a8a6b3d4dc0a93c74449a7dc0a1353e863",
+        "SPEC.md": "1bd5d97c02577b4fc2df5426347c70c33a205752685abc68da239192beb380e9",
+        "eslint.config.mjs": "90385e9ca3d64e82952714eff5f492ef6294f1fc1f59c02fe030458cff8211f9",
+        "next.config.ts": "571b26eb3f7b22f6b80d274f96048e5fc55e6c49163c195490bc998c8f1a0d6f",
+        "package-lock.json": "a14b54dad662103c19c20c74feca5f80c878c1c4e9030c0a51a232b03ddf0316",
+        "package.json": "bcd780d913a3f9aba38c83b7d5285f0f3e78f28a71ee10d8b1adec06d3549c9b",
+        "public/file.svg": "1928c6b2ea04c1904c977cb4c5b95dd2c701aa201c1afe9dfdc9b4c7845c31b3",
+        "public/globe.svg": "58aa29b8da5e4d9fe4d3ac9ba1c741baf8da83e85041b0a2318e8ea6c5e20999",
+        "public/next.svg": "e2f86041532d90d8d414d9c9451f74a3706a7e3b9f84974bb62bc3922e674f84",
+        "public/vercel.svg": "996dce41054df464885bcfe85c8a83f7a09c0bb45300fffb92ff7c7f328cc352",
+        "public/window.svg": "1e2eca457e34f573cd9ffde1061ab43731c19df8efed3a5685f95fc78243f529",
+        "scripts/test.mjs": "b02417d23b27a9991989d356de98d99e2fd7fabe84e8266e2a6615317fbffe22",
+        "src/app/favicon.ico": "4c3826a11f2948ddf86f849667ba841e36fac7e207b4f4c0a587c4845843bd02",
+        "src/app/globals.css": "ee4618e9118b769b303a24d4e51b4b0b40b762388a7864d11891b634f322e4e6",
+        "src/app/layout.tsx": "960caf65cef90afeb9fc3fac06c462246741eba7d2f06262c16edfed0d3f4c0a",
+        "src/app/page.tsx": "8b6bd769ccf8899061660460c76fb37beff4328f4dd3c2f9131db43e73a5b937",
+        "src/lib/env.test.ts": "9c8887dd2f82ad63c297168c83a9377160e79924b8f919bca9605a40532369dd",
+        "src/lib/env.ts": "0a1ca13db706f43a2989df5098d7a92e2725a0c861fa628446e622c063fa68b6",
+        "tsconfig.json": "225a7d68d1e35e70ebe714cc92ce421b1276e9ccf74056fc16d90f5388915453",
+        "vitest.config.ts": "c30a1215c6503c110dac7cdd9406f1fb5e9fa6f22f729e1f54e51fd3a7fd0d7c"
+      }
     },
     {
       "id": "M2",
@@ -440,7 +486,17 @@
   ],
   "learning_proposals": [],
   "cleanup_proposals": [],
-  "controls": [],
+  "controls": [
+    {
+      "id": "95f5590b-65b3-42ae-9252-9e5bc0694528",
+      "at": "2026-11-10T09:35:25.607Z",
+      "action": "approve",
+      "task": "M0",
+      "human": "Rishik Kumar",
+      "reason": "Reviewed the M0 local preview, foundation checks, and pushed implementation.",
+      "revision": null
+    }
+  ],
   "attempts": [
     {
       "id": "6be5041f-65d4-4b08-9ab3-3ae80f0359e9",
@@ -489,6 +545,30 @@
       "cost": null,
       "stop_reason": null,
       "ended_at": "2026-11-10T09:20:23.817Z"
+    },
+    {
+      "id": "81a8a7a4-de82-4fdb-b6aa-bc90d8ac975b",
+      "task": "M0",
+      "kind": "gate",
+      "command": "npm run lint && npm run typecheck && npm test -- --runInBand",
+      "timeout": 120000,
+      "authorization": null,
+      "pid": 48159,
+      "child_pid": 48179,
+      "started_at": "2026-11-10T09:35:14.464Z",
+      "status": "passed",
+      "before_hash": "a50f95f8440b4017e2123afb9eced3eb61490d19fefb39631342ed07e3cb59a5",
+      "config_hash": "94ce172416faaaadc2c155245edcd666e986608554c92d0f24bf77057d24bf96",
+      "environment": {
+        "node": "v24.13.0",
+        "platform": "linux",
+        "arch": "x64",
+        "verifier": "358371454f03eb4fdfd3eda3cb1d18cb1dd8fe9445404bb3d3047267b3977eb9",
+        "variables": {}
+      },
+      "cost": null,
+      "stop_reason": null,
+      "ended_at": "2026-11-10T09:35:23.407Z"
     }
   ],
   "authorizations": [],
@@ -496,13 +576,13 @@
   "incidents": [],
   "discovery": null,
   "checkpoint": {
-    "at": "2026-11-10T09:21:05.735Z",
+    "at": "2026-11-10T09:38:15.332Z",
     "revision": {
-      "commit": "05501123610069437173a68e02323d9c1c561302",
-      "dirty": false,
-      "source_hash": "a50f95f8440b4017e2123afb9eced3eb61490d19fefb39631342ed07e3cb59a5"
+      "commit": "26b53259a8971ca650b20abb86457526d120f197",
+      "dirty": true,
+      "source_hash": "99aa49c7c1c12f47509762ae9c032f2e7041c9f4ee8938bb0f085473b9fecf71"
     },
-    "active_task": "M0",
+    "active_task": "M1",
     "next_action": "Run the task pre-flight."
   },
   "legacy": null

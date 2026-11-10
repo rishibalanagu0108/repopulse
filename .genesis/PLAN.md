@@ -10,15 +10,15 @@
 
 ### M0 — Create the Next.js application foundation, design tokens, environment contract, and quality checks without product data flows.
 
-- state/risk: active / medium
+- state/risk: done / medium
 - requirements: NFR-1, NFR-7, NFR-8, AC-9
 - scope: not bounded
-- gates: foundation: npm run lint && npm run typecheck && npm test -- --runInBand, independent-review: pending
+- gates: foundation: npm run lint && npm run typecheck && npm test -- --runInBand, independent-review: pass
 - next: Run the task pre-flight.
 
 ### M1 — Implement the public repository search and detail experience with validated GitHub reads, cache-aware freshness, loading states, and upstream error handling.
 
-- state/risk: queued / medium
+- state/risk: active / medium
 - requirements: FR-1, FR-2, FR-3, FR-6, FR-7, FR-11, FR-12, FR-13, NFR-2, NFR-3, AC-1, AC-2, AC-6
 - scope: not bounded
 - gates: github-flow: npm test -- --runInBand, independent-review: pending

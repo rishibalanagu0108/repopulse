@@ -4,11 +4,11 @@
 
 - objective: Build a production-quality GitHub repository health dashboard with search, metrics, deterministic health scoring, watchlists, comparison, and a live deployment.
 - phase/status: build/active
-- active task: M0 — Create the Next.js application foundation, design tokens, environment contract, and quality checks without product data flows.
+- active task: M1 — Implement the public repository search and detail experience with validated GitHub reads, cache-aware freshness, loading states, and upstream error handling.
 - blocker: none
 - next action: Run the task pre-flight.
 - phase instruction: Implement only the active task and prove it against current sources. Check `genesis query . impact PATH` before editing shared code.
-- gates: foundation:stale, independent-review:pending
+- gates: github-flow:pending, independent-review:pending
 - recent failures: none
 
 ## Resume
@@ -17,7 +17,7 @@ Load Genesis and official Ponytail full, then run `genesis brief .` for the curr
 Fetch full records with `genesis context . --id ID` only when needed. Do not load project.json or historical proof wholesale.
 Ask the index before reading code: `genesis query . search|scope|callers|callees|impact|path` (`--json` for parsing). Run `genesis query . impact PATH` before editing shared code. Answers are advisory static analysis; `ambiguous` means candidates were not ruled out, so confirm in source.
 Run `genesis serve .` for a live map of the repository when structure is unclear; it reindexes on save and is read-only. Run `genesis index .` if the index is stale and nothing is watching.
-Context fingerprint: 80d9b128ef5be12fa8445bd2aba1bf615e754f79ac51d970102e78a6944459f1. Use --since only after receiving that full packet; kickoff is not the packet.
+Context fingerprint: 85f26b9fb0265709e8bc006ba12797926bc34f060befcc760ca81a70be844325. Use --since only after receiving that full packet; kickoff is not the packet.
 - DECISION-34164c15: Use a single Next.js application
 - DECISION-db93e9f0: Use deterministic repository health scoring
 Applicable invariants, active rules, authorization and proof references are in the packet. Truncated summaries are retrieval pointers, not the full evidence.

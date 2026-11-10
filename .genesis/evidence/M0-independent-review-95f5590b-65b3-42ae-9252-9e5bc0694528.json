@@ -1,0 +1,13 @@
+{
+  "task": "M0",
+  "gate": "independent-review",
+  "kind": "review",
+  "attempt": "95f5590b-65b3-42ae-9252-9e5bc0694528",
+  "human": "Rishik Kumar",
+  "reason": "Reviewed the M0 local preview, foundation checks, and pushed implementation.",
+  "observed_at": "2026-11-10T09:35:25.607Z",
+  "source_hash": "a50f95f8440b4017e2123afb9eced3eb61490d19fefb39631342ed07e3cb59a5",
+  "config_hash": "94ce172416faaaadc2c155245edcd666e986608554c92d0f24bf77057d24bf96",
+  "reviewed_proofs": "36e320f02d91ea042c19a9e14009bc3c51b43c0de73ca564a42cdc93a8d45423",
+  "hash": "6ff89657c16c99509359a9b4167aba8b0185c16b9f2902597aad3f74b590342d"
+}

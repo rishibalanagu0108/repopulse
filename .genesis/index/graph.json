@@ -1,8 +1,8 @@
 {
   "schemaVersion": 2,
   "project": "repopulse",
-  "revision": "05501123610069437173a68e02323d9c1c561302",
-  "sourceHash": "12f85fa5b8b14f39ece07239c7975e9589965371f3c5918413f60726ab7350d1",
+  "revision": "26b53259a8971ca650b20abb86457526d120f197",
+  "sourceHash": "7601604516c7dcfc55c11c248fd0a83e4819f8f645f6637bcb1386423095ad87",
   "provenance": {
     "tool": "genesis-graphizer",
     "method": "static-analysis",
@@ -50,6 +50,26 @@
       "contentHash": "38d7ff2463ff7d5f2d0a43c27caa0b6224cd122242f921b1afd65969729093d1"
     },
     {
+      "id": "file:src/app/api/repositories/[owner]/[name]/route.ts",
+      "type": "file",
+      "label": "src/app/api/repositories/[owner]/[name]/route.ts",
+      "path": "src/app/api/repositories/[owner]/[name]/route.ts",
+      "language": "javascript",
+      "confidence": 1,
+      "extractor": "filesystem",
+      "contentHash": "4d8e7a942c03fdeb5036ad00e3f218a583300b8393dfcb429fdf6dc38ff362b1"
+    },
+    {
+      "id": "file:src/app/api/repositories/search/route.ts",
+      "type": "file",
+      "label": "src/app/api/repositories/search/route.ts",
+      "path": "src/app/api/repositories/search/route.ts",
+      "language": "javascript",
+      "confidence": 1,
+      "extractor": "filesystem",
+      "contentHash": "0dc4308b438c20e419d22841758692ae14e7b8904c8ae47597bac29f92f1ef59"
+    },
+    {
       "id": "file:src/app/layout.tsx",
       "type": "file",
       "label": "src/app/layout.tsx",
@@ -67,7 +87,37 @@
       "language": "javascript",
       "confidence": 1,
       "extractor": "filesystem",
-      "contentHash": "261cc5ec885b2373408f3aa5b07c96a87d893e35e139b1a2f5df62c5991aff84"
+      "contentHash": "84ec47754b91ed5633d3b29a5a2b8edbed83c7bbd371a68e4d39ff66395857f7"
+    },
+    {
+      "id": "file:src/app/repository/[owner]/[name]/loading.tsx",
+      "type": "file",
+      "label": "src/app/repository/[owner]/[name]/loading.tsx",
+      "path": "src/app/repository/[owner]/[name]/loading.tsx",
+      "language": "javascript",
+      "confidence": 1,
+      "extractor": "filesystem",
+      "contentHash": "720de3097bf180fd2835b81ff7887b480b48e8bb24aea85f36851f35230f9dc2"
+    },
+    {
+      "id": "file:src/app/repository/[owner]/[name]/page.tsx",
+      "type": "file",
+      "label": "src/app/repository/[owner]/[name]/page.tsx",
+      "path": "src/app/repository/[owner]/[name]/page.tsx",
+      "language": "javascript",
+      "confidence": 1,
+      "extractor": "filesystem",
+      "contentHash": "f249de2629cef518e4caedbdfe188f4129dc71661fcfdb0a50d3976f6dd5aa0c"
+    },
+    {
+      "id": "file:src/components/repository-search.tsx",
+      "type": "file",
+      "label": "src/components/repository-search.tsx",
+      "path": "src/components/repository-search.tsx",
+      "language": "javascript",
+      "confidence": 1,
+      "extractor": "filesystem",
+      "contentHash": "08fd1421a5e42d1163134f71b07b9b0bdad82d0e9e445d5ce77d4e6ca554e6d2"
     },
     {
       "id": "file:src/lib/env.test.ts",
@@ -90,6 +140,26 @@
       "contentHash": "c1d3a6eceb6cbd6a795c2823fc58f197409244bb8d7ad331240b40e5e300f1a4"
     },
     {
+      "id": "file:src/lib/github.test.ts",
+      "type": "file",
+      "label": "src/lib/github.test.ts",
+      "path": "src/lib/github.test.ts",
+      "language": "javascript",
+      "confidence": 1,
+      "extractor": "filesystem",
+      "contentHash": "dd3560f72d2c8fd4e297edbd91468bbbb18e2b1d82bc8f7c5fcddd502cbe7e6b"
+    },
+    {
+      "id": "file:src/lib/github.ts",
+      "type": "file",
+      "label": "src/lib/github.ts",
+      "path": "src/lib/github.ts",
+      "language": "javascript",
+      "confidence": 1,
+      "extractor": "filesystem",
+      "contentHash": "518d61e4baad8662594b45870420a9623878198bcf949ac99bfd21d5a1023b4b"
+    },
+    {
       "id": "file:vitest.config.ts",
       "type": "file",
       "label": "vitest.config.ts",
@@ -97,7 +167,7 @@
       "language": "javascript",
       "confidence": 1,
       "extractor": "filesystem",
-      "contentHash": "e7e3d44156fd9697c575240c73a566279d88da05e518f6d48f31db4ba39ed01a"
+      "contentHash": "9a4eb9704e833c3eeacac1e9b84ff0e36362aee79224864241798b93599ec55b"
     },
     {
       "id": "package:npm:eslint",
@@ -127,6 +197,15 @@
       "contentHash": "829b826fa053ff800eae160000b068ad0153105748bc231e8db5205b1ea83780"
     },
     {
+      "id": "package:npm:react",
+      "type": "package",
+      "label": "react",
+      "ecosystem": "npm",
+      "confidence": 0.85,
+      "extractor": "import",
+      "contentHash": "5235ef4d5d23a83db39d749bfea92bdc3cac601ea2cfae3a8f15e91d7ee494ff"
+    },
+    {
       "id": "package:npm:vitest",
       "type": "package",
       "label": "vitest",
@@ -152,6 +231,15 @@
       "confidence": 0.85,
       "extractor": "standard-library",
       "contentHash": "6e1742450f7f56b80f1004a8a04675b38781504a842956d2dc868e1ff82f444c"
+    },
+    {
+      "id": "runtime:javascript:path",
+      "type": "runtime",
+      "label": "path",
+      "language": "javascript",
+      "confidence": 0.85,
+      "extractor": "standard-library",
+      "contentHash": "8e9e99a892940fe6824c66f1743a5359c95f727c8518cd02475056bed12dbba5"
     },
     {
       "id": "symbol:eslint.config.mjs#variable:eslintConfig",
@@ -200,6 +288,30 @@
       "confidence": 0.8,
       "extractor": "conservative-js-symbols",
       "contentHash": "6c6d6b872af472caa520b3e0b31e70f8b866aadbbecbeeb84bee291751f2e123"
+    },
+    {
+      "id": "symbol:src/app/api/repositories/[owner]/[name]/route.ts#function:GET",
+      "type": "symbol",
+      "kind": "function",
+      "name": "GET",
+      "label": "GET",
+      "path": "src/app/api/repositories/[owner]/[name]/route.ts",
+      "line": 4,
+      "confidence": 0.8,
+      "extractor": "conservative-js-symbols",
+      "contentHash": "b39ccf650ef454eca0d74666cddcbd3c7fc58a37ba72eaf11e3e4a82e187e908"
+    },
+    {
+      "id": "symbol:src/app/api/repositories/search/route.ts#function:GET",
+      "type": "symbol",
+      "kind": "function",
+      "name": "GET",
+      "label": "GET",
+      "path": "src/app/api/repositories/search/route.ts",
+      "line": 4,
+      "confidence": 0.8,
+      "extractor": "conservative-js-symbols",
+      "contentHash": "b39ccf650ef454eca0d74666cddcbd3c7fc58a37ba72eaf11e3e4a82e187e908"
     },
     {
       "id": "symbol:src/app/layout.tsx#function:RootLayout",
@@ -256,10 +368,58 @@
       "name": "Home",
       "label": "Home",
       "path": "src/app/page.tsx",
-      "line": 1,
+      "line": 3,
       "confidence": 0.8,
       "extractor": "conservative-js-symbols",
       "contentHash": "e1a106fbcc131f9a29bfcc7ca368c0c2e8175b30674f7f2c893aff7089d9e886"
+    },
+    {
+      "id": "symbol:src/app/repository/[owner]/[name]/loading.tsx#function:Loading",
+      "type": "symbol",
+      "kind": "function",
+      "name": "Loading",
+      "label": "Loading",
+      "path": "src/app/repository/[owner]/[name]/loading.tsx",
+      "line": 1,
+      "confidence": 0.8,
+      "extractor": "conservative-js-symbols",
+      "contentHash": "a95320917f2edf50c2e103c9dbcb54b9bd74858b9e82702f2e7905d5e5bc1088"
+    },
+    {
+      "id": "symbol:src/app/repository/[owner]/[name]/page.tsx#function:RepositoryPage",
+      "type": "symbol",
+      "kind": "function",
+      "name": "RepositoryPage",
+      "label": "RepositoryPage",
+      "path": "src/app/repository/[owner]/[name]/page.tsx",
+      "line": 4,
+      "confidence": 0.8,
+      "extractor": "conservative-js-symbols",
+      "contentHash": "0d1d41291efe2321f259f68c2921426d611b6431156d8deaba0edd3114f58004"
+    },
+    {
+      "id": "symbol:src/components/repository-search.tsx#function:RepositorySearch",
+      "type": "symbol",
+      "kind": "function",
+      "name": "RepositorySearch",
+      "label": "RepositorySearch",
+      "path": "src/components/repository-search.tsx",
+      "line": 8,
+      "confidence": 0.8,
+      "extractor": "conservative-js-symbols",
+      "contentHash": "5205cb1ed11e5064d526a777e6ff3ab0f61a109dd9292a404ab3144676c0123f"
+    },
+    {
+      "id": "symbol:src/components/repository-search.tsx#type:SearchResult",
+      "type": "symbol",
+      "kind": "type",
+      "name": "SearchResult",
+      "label": "SearchResult",
+      "path": "src/components/repository-search.tsx",
+      "line": 6,
+      "confidence": 0.8,
+      "extractor": "conservative-js-symbols",
+      "contentHash": "16671907ec1b7a134013aa3eb170947357cd6d193f7252857e1e4cdefca54839"
     },
     {
       "id": "symbol:src/lib/env.ts#variable:env",
@@ -284,6 +444,174 @@
       "confidence": 0.8,
       "extractor": "conservative-js-symbols",
       "contentHash": "6b0358e26ab2dc25188776022de4c9c4dcf0b7544f303d7754458f7bb6d4b399"
+    },
+    {
+      "id": "symbol:src/lib/github.ts#class:GitHubApiError",
+      "type": "symbol",
+      "kind": "class",
+      "name": "GitHubApiError",
+      "label": "GitHubApiError",
+      "path": "src/lib/github.ts",
+      "line": 54,
+      "confidence": 0.8,
+      "extractor": "conservative-js-symbols",
+      "contentHash": "c4e9083305613f37fa5fd360b73cdfe2579adde5ad3ae8152b30beb100ef1bae"
+    },
+    {
+      "id": "symbol:src/lib/github.ts#function:fetchGitHub",
+      "type": "symbol",
+      "kind": "function",
+      "name": "fetchGitHub",
+      "label": "fetchGitHub",
+      "path": "src/lib/github.ts",
+      "line": 74,
+      "confidence": 0.8,
+      "extractor": "conservative-js-symbols",
+      "contentHash": "4281695bc7f4428115aba36629058a89ffe98288f0cab82b78d4fc440de61b44"
+    },
+    {
+      "id": "symbol:src/lib/github.ts#function:fetchOptional",
+      "type": "symbol",
+      "kind": "function",
+      "name": "fetchOptional",
+      "label": "fetchOptional",
+      "path": "src/lib/github.ts",
+      "line": 98,
+      "confidence": 0.8,
+      "extractor": "conservative-js-symbols",
+      "contentHash": "69f5a35a3ad11c5e3d7147e44003ef7b77ceb36968c240f60fcd3e093668bf6c"
+    },
+    {
+      "id": "symbol:src/lib/github.ts#function:getRepositorySnapshot",
+      "type": "symbol",
+      "kind": "function",
+      "name": "getRepositorySnapshot",
+      "label": "getRepositorySnapshot",
+      "path": "src/lib/github.ts",
+      "line": 115,
+      "confidence": 0.8,
+      "extractor": "conservative-js-symbols",
+      "contentHash": "81b6e4026086ca89ded0771f28b4a543a4d59b707d3e0fe699934430eb775aae"
+    },
+    {
+      "id": "symbol:src/lib/github.ts#function:headers",
+      "type": "symbol",
+      "kind": "function",
+      "name": "headers",
+      "label": "headers",
+      "path": "src/lib/github.ts",
+      "line": 64,
+      "confidence": 0.8,
+      "extractor": "conservative-js-symbols",
+      "contentHash": "140fcc8753620fcb4539747ba4b87f0cb028e14fb836a0eaecf3cdb9ae317587"
+    },
+    {
+      "id": "symbol:src/lib/github.ts#function:searchRepositories",
+      "type": "symbol",
+      "kind": "function",
+      "name": "searchRepositories",
+      "label": "searchRepositories",
+      "path": "src/lib/github.ts",
+      "line": 106,
+      "confidence": 0.8,
+      "extractor": "conservative-js-symbols",
+      "contentHash": "77c09fcf23914842f25a815556de2ab9fcf0d7713c105d43cd9a726cc6654b44"
+    },
+    {
+      "id": "symbol:src/lib/github.ts#type:GitHubEvent",
+      "type": "symbol",
+      "kind": "type",
+      "name": "GitHubEvent",
+      "label": "GitHubEvent",
+      "path": "src/lib/github.ts",
+      "line": 44,
+      "confidence": 0.8,
+      "extractor": "conservative-js-symbols",
+      "contentHash": "4a6632e1062515e9e4f3cd82fc75ccb96bb30fe4f7e15671bae27c2a65f502b7"
+    },
+    {
+      "id": "symbol:src/lib/github.ts#type:GitHubRelease",
+      "type": "symbol",
+      "kind": "type",
+      "name": "GitHubRelease",
+      "label": "GitHubRelease",
+      "path": "src/lib/github.ts",
+      "line": 43,
+      "confidence": 0.8,
+      "extractor": "conservative-js-symbols",
+      "contentHash": "ff96e681cffeb956b3f62eee0629efbfdaa86719d3cd10f180e0e7deeb92e7e1"
+    },
+    {
+      "id": "symbol:src/lib/github.ts#type:GitHubRepository",
+      "type": "symbol",
+      "kind": "type",
+      "name": "GitHubRepository",
+      "label": "GitHubRepository",
+      "path": "src/lib/github.ts",
+      "line": 42,
+      "confidence": 0.8,
+      "extractor": "conservative-js-symbols",
+      "contentHash": "216ac8ff372b1de471ffb0e5045a5498d47674fb1c82450402e66d8b19369662"
+    },
+    {
+      "id": "symbol:src/lib/github.ts#type:RepositorySnapshot",
+      "type": "symbol",
+      "kind": "type",
+      "name": "RepositorySnapshot",
+      "label": "RepositorySnapshot",
+      "path": "src/lib/github.ts",
+      "line": 46,
+      "confidence": 0.8,
+      "extractor": "conservative-js-symbols",
+      "contentHash": "66afa5a8e9a8dfe4eb682cfd22013aca30008c7b9a2d29a2386aa4d2712beaed"
+    },
+    {
+      "id": "symbol:src/lib/github.ts#variable:githubEventSchema",
+      "type": "symbol",
+      "kind": "variable",
+      "name": "githubEventSchema",
+      "label": "githubEventSchema",
+      "path": "src/lib/github.ts",
+      "line": 35,
+      "confidence": 0.8,
+      "extractor": "conservative-js-symbols",
+      "contentHash": "5dac85ea917de530365a877799f75433d15bd39d399c4e3ced455300765fc6a3"
+    },
+    {
+      "id": "symbol:src/lib/github.ts#variable:githubReleaseSchema",
+      "type": "symbol",
+      "kind": "variable",
+      "name": "githubReleaseSchema",
+      "label": "githubReleaseSchema",
+      "path": "src/lib/github.ts",
+      "line": 27,
+      "confidence": 0.8,
+      "extractor": "conservative-js-symbols",
+      "contentHash": "b997093f3979325af85de7f94f7c4dbaebd48bc1cc4242343212337df2740c83"
+    },
+    {
+      "id": "symbol:src/lib/github.ts#variable:githubRepositorySchema",
+      "type": "symbol",
+      "kind": "variable",
+      "name": "githubRepositorySchema",
+      "label": "githubRepositorySchema",
+      "path": "src/lib/github.ts",
+      "line": 3,
+      "confidence": 0.8,
+      "extractor": "conservative-js-symbols",
+      "contentHash": "6d6e7e428ff03db45f0a34e83e1aef5e71d73823955303208da0e63d971146ae"
+    },
+    {
+      "id": "symbol:src/lib/github.ts#variable:githubSearchSchema",
+      "type": "symbol",
+      "kind": "variable",
+      "name": "githubSearchSchema",
+      "label": "githubSearchSchema",
+      "path": "src/lib/github.ts",
+      "line": 22,
+      "confidence": 0.8,
+      "extractor": "conservative-js-symbols",
+      "contentHash": "f7a03bce55e092c916f0d60256763d5d88dae6ac78936334b2e91eba2f769d8e"
     },
     {
       "id": "unresolved:next-env.d.ts:./.next/types/root-params.d.ts",
@@ -311,6 +639,87 @@
     }
   ],
   "edges": [
+    {
+      "type": "calls",
+      "source": "symbol:src/app/api/repositories/[owner]/[name]/route.ts#function:GET",
+      "target": "symbol:src/lib/github.ts#function:getRepositorySnapshot",
+      "tier": "proven",
+      "resolved": true,
+      "confidence": 0.7,
+      "extractor": "conservative-js-calls"
+    },
+    {
+      "type": "calls",
+      "source": "symbol:src/app/api/repositories/search/route.ts#function:GET",
+      "target": "symbol:src/lib/github.ts#function:searchRepositories",
+      "tier": "proven",
+      "resolved": true,
+      "confidence": 0.7,
+      "extractor": "conservative-js-calls"
+    },
+    {
+      "type": "calls",
+      "source": "symbol:src/app/repository/[owner]/[name]/page.tsx#function:RepositoryPage",
+      "target": "symbol:src/lib/github.ts#function:getRepositorySnapshot",
+      "tier": "proven",
+      "resolved": true,
+      "confidence": 0.7,
+      "extractor": "conservative-js-calls"
+    },
+    {
+      "type": "calls",
+      "source": "symbol:src/lib/github.ts#function:fetchGitHub",
+      "target": "symbol:src/lib/github.ts#class:GitHubApiError",
+      "tier": "proven",
+      "resolved": true,
+      "confidence": 0.75,
+      "extractor": "conservative-js-calls"
+    },
+    {
+      "type": "calls",
+      "source": "symbol:src/lib/github.ts#function:fetchGitHub",
+      "target": "symbol:src/lib/github.ts#function:headers",
+      "tier": "proven",
+      "resolved": true,
+      "confidence": 0.75,
+      "extractor": "conservative-js-calls"
+    },
+    {
+      "type": "calls",
+      "source": "symbol:src/lib/github.ts#function:fetchOptional",
+      "target": "symbol:src/lib/github.ts#function:fetchGitHub",
+      "tier": "proven",
+      "resolved": true,
+      "confidence": 0.75,
+      "extractor": "conservative-js-calls"
+    },
+    {
+      "type": "calls",
+      "source": "symbol:src/lib/github.ts#function:getRepositorySnapshot",
+      "target": "symbol:src/lib/github.ts#function:fetchGitHub",
+      "tier": "proven",
+      "resolved": true,
+      "confidence": 0.75,
+      "extractor": "conservative-js-calls"
+    },
+    {
+      "type": "calls",
+      "source": "symbol:src/lib/github.ts#function:getRepositorySnapshot",
+      "target": "symbol:src/lib/github.ts#function:fetchOptional",
+      "tier": "proven",
+      "resolved": true,
+      "confidence": 0.75,
+      "extractor": "conservative-js-calls"
+    },
+    {
+      "type": "calls",
+      "source": "symbol:src/lib/github.ts#function:searchRepositories",
+      "target": "symbol:src/lib/github.ts#function:fetchGitHub",
+      "tier": "proven",
+      "resolved": true,
+      "confidence": 0.75,
+      "extractor": "conservative-js-calls"
+    },
     {
       "type": "defines",
       "source": "file:eslint.config.mjs",
@@ -342,6 +751,24 @@
       "type": "defines",
       "source": "file:scripts/test.mjs",
       "target": "symbol:scripts/test.mjs#variable:result",
+      "line": 4,
+      "resolved": true,
+      "confidence": 0.8,
+      "extractor": "conservative-js-symbols"
+    },
+    {
+      "type": "defines",
+      "source": "file:src/app/api/repositories/[owner]/[name]/route.ts",
+      "target": "symbol:src/app/api/repositories/[owner]/[name]/route.ts#function:GET",
+      "line": 4,
+      "resolved": true,
+      "confidence": 0.8,
+      "extractor": "conservative-js-symbols"
+    },
+    {
+      "type": "defines",
+      "source": "file:src/app/api/repositories/search/route.ts",
+      "target": "symbol:src/app/api/repositories/search/route.ts#function:GET",
       "line": 4,
       "resolved": true,
       "confidence": 0.8,
@@ -387,7 +814,43 @@
       "type": "defines",
       "source": "file:src/app/page.tsx",
       "target": "symbol:src/app/page.tsx#function:Home",
+      "line": 3,
+      "resolved": true,
+      "confidence": 0.8,
+      "extractor": "conservative-js-symbols"
+    },
+    {
+      "type": "defines",
+      "source": "file:src/app/repository/[owner]/[name]/loading.tsx",
+      "target": "symbol:src/app/repository/[owner]/[name]/loading.tsx#function:Loading",
       "line": 1,
+      "resolved": true,
+      "confidence": 0.8,
+      "extractor": "conservative-js-symbols"
+    },
+    {
+      "type": "defines",
+      "source": "file:src/app/repository/[owner]/[name]/page.tsx",
+      "target": "symbol:src/app/repository/[owner]/[name]/page.tsx#function:RepositoryPage",
+      "line": 4,
+      "resolved": true,
+      "confidence": 0.8,
+      "extractor": "conservative-js-symbols"
+    },
+    {
+      "type": "defines",
+      "source": "file:src/components/repository-search.tsx",
+      "target": "symbol:src/components/repository-search.tsx#function:RepositorySearch",
+      "line": 8,
+      "resolved": true,
+      "confidence": 0.8,
+      "extractor": "conservative-js-symbols"
+    },
+    {
+      "type": "defines",
+      "source": "file:src/components/repository-search.tsx",
+      "target": "symbol:src/components/repository-search.tsx#type:SearchResult",
+      "line": 6,
       "resolved": true,
       "confidence": 0.8,
       "extractor": "conservative-js-symbols"
@@ -406,6 +869,132 @@
       "source": "file:src/lib/env.ts",
       "target": "symbol:src/lib/env.ts#variable:envSchema",
       "line": 3,
+      "resolved": true,
+      "confidence": 0.8,
+      "extractor": "conservative-js-symbols"
+    },
+    {
+      "type": "defines",
+      "source": "file:src/lib/github.ts",
+      "target": "symbol:src/lib/github.ts#class:GitHubApiError",
+      "line": 54,
+      "resolved": true,
+      "confidence": 0.8,
+      "extractor": "conservative-js-symbols"
+    },
+    {
+      "type": "defines",
+      "source": "file:src/lib/github.ts",
+      "target": "symbol:src/lib/github.ts#function:fetchGitHub",
+      "line": 74,
+      "resolved": true,
+      "confidence": 0.8,
+      "extractor": "conservative-js-symbols"
+    },
+    {
+      "type": "defines",
+      "source": "file:src/lib/github.ts",
+      "target": "symbol:src/lib/github.ts#function:fetchOptional",
+      "line": 98,
+      "resolved": true,
+      "confidence": 0.8,
+      "extractor": "conservative-js-symbols"
+    },
+    {
+      "type": "defines",
+      "source": "file:src/lib/github.ts",
+      "target": "symbol:src/lib/github.ts#function:getRepositorySnapshot",
+      "line": 115,
+      "resolved": true,
+      "confidence": 0.8,
+      "extractor": "conservative-js-symbols"
+    },
+    {
+      "type": "defines",
+      "source": "file:src/lib/github.ts",
+      "target": "symbol:src/lib/github.ts#function:headers",
+      "line": 64,
+      "resolved": true,
+      "confidence": 0.8,
+      "extractor": "conservative-js-symbols"
+    },
+    {
+      "type": "defines",
+      "source": "file:src/lib/github.ts",
+      "target": "symbol:src/lib/github.ts#function:searchRepositories",
+      "line": 106,
+      "resolved": true,
+      "confidence": 0.8,
+      "extractor": "conservative-js-symbols"
+    },
+    {
+      "type": "defines",
+      "source": "file:src/lib/github.ts",
+      "target": "symbol:src/lib/github.ts#type:GitHubEvent",
+      "line": 44,
+      "resolved": true,
+      "confidence": 0.8,
+      "extractor": "conservative-js-symbols"
+    },
+    {
+      "type": "defines",
+      "source": "file:src/lib/github.ts",
+      "target": "symbol:src/lib/github.ts#type:GitHubRelease",
+      "line": 43,
+      "resolved": true,
+      "confidence": 0.8,
+      "extractor": "conservative-js-symbols"
+    },
+    {
+      "type": "defines",
+      "source": "file:src/lib/github.ts",
+      "target": "symbol:src/lib/github.ts#type:GitHubRepository",
+      "line": 42,
+      "resolved": true,
+      "confidence": 0.8,
+      "extractor": "conservative-js-symbols"
+    },
+    {
+      "type": "defines",
+      "source": "file:src/lib/github.ts",
+      "target": "symbol:src/lib/github.ts#type:RepositorySnapshot",
+      "line": 46,
+      "resolved": true,
+      "confidence": 0.8,
+      "extractor": "conservative-js-symbols"
+    },
+    {
+      "type": "defines",
+      "source": "file:src/lib/github.ts",
+      "target": "symbol:src/lib/github.ts#variable:githubEventSchema",
+      "line": 35,
+      "resolved": true,
+      "confidence": 0.8,
+      "extractor": "conservative-js-symbols"
+    },
+    {
+      "type": "defines",
+      "source": "file:src/lib/github.ts",
+      "target": "symbol:src/lib/github.ts#variable:githubReleaseSchema",
+      "line": 27,
+      "resolved": true,
+      "confidence": 0.8,
+      "extractor": "conservative-js-symbols"
+    },
+    {
+      "type": "defines",
+      "source": "file:src/lib/github.ts",
+      "target": "symbol:src/lib/github.ts#variable:githubRepositorySchema",
+      "line": 3,
+      "resolved": true,
+      "confidence": 0.8,
+      "extractor": "conservative-js-symbols"
+    },
+    {
+      "type": "defines",
+      "source": "file:src/lib/github.ts",
+      "target": "symbol:src/lib/github.ts#variable:githubSearchSchema",
+      "line": 22,
       "resolved": true,
       "confidence": 0.8,
       "extractor": "conservative-js-symbols"
@@ -482,6 +1071,46 @@
     },
     {
       "type": "imports",
+      "source": "file:src/app/api/repositories/[owner]/[name]/route.ts",
+      "target": "file:src/lib/github.ts",
+      "specifier": "@/lib/github",
+      "line": 2,
+      "resolved": true,
+      "confidence": 0.85,
+      "extractor": "javascript-imports"
+    },
+    {
+      "type": "imports",
+      "source": "file:src/app/api/repositories/[owner]/[name]/route.ts",
+      "target": "package:npm:next",
+      "specifier": "next/server",
+      "line": 1,
+      "resolved": false,
+      "confidence": 0.5,
+      "extractor": "javascript-imports"
+    },
+    {
+      "type": "imports",
+      "source": "file:src/app/api/repositories/search/route.ts",
+      "target": "file:src/lib/github.ts",
+      "specifier": "@/lib/github",
+      "line": 2,
+      "resolved": true,
+      "confidence": 0.85,
+      "extractor": "javascript-imports"
+    },
+    {
+      "type": "imports",
+      "source": "file:src/app/api/repositories/search/route.ts",
+      "target": "package:npm:next",
+      "specifier": "next/server",
+      "line": 1,
+      "resolved": false,
+      "confidence": 0.5,
+      "extractor": "javascript-imports"
+    },
+    {
+      "type": "imports",
       "source": "file:src/app/layout.tsx",
       "target": "package:npm:next",
       "specifier": "next",
@@ -512,6 +1141,56 @@
     },
     {
       "type": "imports",
+      "source": "file:src/app/page.tsx",
+      "target": "file:src/components/repository-search.tsx",
+      "specifier": "@/components/repository-search",
+      "line": 1,
+      "resolved": true,
+      "confidence": 0.85,
+      "extractor": "javascript-imports"
+    },
+    {
+      "type": "imports",
+      "source": "file:src/app/repository/[owner]/[name]/page.tsx",
+      "target": "file:src/lib/github.ts",
+      "specifier": "@/lib/github",
+      "line": 2,
+      "resolved": true,
+      "confidence": 0.85,
+      "extractor": "javascript-imports"
+    },
+    {
+      "type": "imports",
+      "source": "file:src/app/repository/[owner]/[name]/page.tsx",
+      "target": "package:npm:next",
+      "specifier": "next/link",
+      "line": 1,
+      "resolved": false,
+      "confidence": 0.5,
+      "extractor": "javascript-imports"
+    },
+    {
+      "type": "imports",
+      "source": "file:src/components/repository-search.tsx",
+      "target": "package:npm:next",
+      "specifier": "next/navigation",
+      "line": 4,
+      "resolved": false,
+      "confidence": 0.5,
+      "extractor": "javascript-imports"
+    },
+    {
+      "type": "imports",
+      "source": "file:src/components/repository-search.tsx",
+      "target": "package:npm:react",
+      "specifier": "react",
+      "line": 2,
+      "resolved": false,
+      "confidence": 0.5,
+      "extractor": "javascript-imports"
+    },
+    {
+      "type": "imports",
       "source": "file:src/lib/env.test.ts",
       "target": "package:npm:vitest",
       "specifier": "vitest",
@@ -532,17 +1211,57 @@
     },
     {
       "type": "imports",
-      "source": "file:vitest.config.ts",
+      "source": "file:src/lib/github.test.ts",
+      "target": "file:src/lib/github.ts",
+      "specifier": "@/lib/github",
+      "line": 2,
+      "resolved": true,
+      "confidence": 0.85,
+      "extractor": "javascript-imports"
+    },
+    {
+      "type": "imports",
+      "source": "file:src/lib/github.test.ts",
       "target": "package:npm:vitest",
-      "specifier": "vitest/config",
+      "specifier": "vitest",
       "line": 1,
       "resolved": false,
       "confidence": 0.5,
+      "extractor": "javascript-imports"
+    },
+    {
+      "type": "imports",
+      "source": "file:src/lib/github.ts",
+      "target": "package:npm:zod",
+      "specifier": "zod",
+      "line": 1,
+      "resolved": false,
+      "confidence": 0.5,
+      "extractor": "javascript-imports"
+    },
+    {
+      "type": "imports",
+      "source": "file:vitest.config.ts",
+      "target": "package:npm:vitest",
+      "specifier": "vitest/config",
+      "line": 2,
+      "resolved": false,
+      "confidence": 0.5,
+      "extractor": "javascript-imports"
+    },
+    {
+      "type": "imports",
+      "source": "file:vitest.config.ts",
+      "target": "runtime:javascript:path",
+      "specifier": "node:path",
+      "line": 1,
+      "resolved": true,
+      "confidence": 0.85,
       "extractor": "javascript-imports"
     }
   ],
   "warnings": [],
   "stats": {
-    "unresolvedCalls": 5
+    "unresolvedCalls": 22
   }
 }
