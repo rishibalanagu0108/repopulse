@@ -4,11 +4,11 @@
 
 - objective: Build a production-quality GitHub repository health dashboard with search, metrics, deterministic health scoring, watchlists, comparison, and a live deployment.
 - phase/status: build/active
-- active task: M1 — Implement the public repository search and detail experience with validated GitHub reads, cache-aware freshness, loading states, and upstream error handling.
+- active task: M2 — Implement database migrations, GitHub OAuth, server-only session handling, and ownership-safe watchlists.
 - blocker: none
 - next action: Run the task pre-flight.
 - phase instruction: Implement only the active task and prove it against current sources. Check `genesis query . impact PATH` before editing shared code.
-- gates: github-flow:pass, independent-review:pending
+- gates: auth-watchlist:pending, independent-review:pending
 - recent failures: none
 
 ## Resume
@@ -17,7 +17,7 @@ Load Genesis and official Ponytail full, then run `genesis brief .` for the curr
 Fetch full records with `genesis context . --id ID` only when needed. Do not load project.json or historical proof wholesale.
 Ask the index before reading code: `genesis query . search|scope|callers|callees|impact|path` (`--json` for parsing). Run `genesis query . impact PATH` before editing shared code. Answers are advisory static analysis; `ambiguous` means candidates were not ruled out, so confirm in source.
 Run `genesis serve .` for a live map of the repository when structure is unclear; it reindexes on save and is read-only. Run `genesis index .` if the index is stale and nothing is watching.
-Context fingerprint: 4e946b3e9002be76c6d38029ffce339e647f23f25df334b6634cb1f51b6d6e3a. Use --since only after receiving that full packet; kickoff is not the packet.
+Context fingerprint: 8a9258dfd5694cba3e22166379b3ada888f598c6c53a6960c29ae18987376696. Use --since only after receiving that full packet; kickoff is not the packet.
 - DECISION-34164c15: Use a single Next.js application
 - DECISION-db93e9f0: Use deterministic repository health scoring
 Applicable invariants, active rules, authorization and proof references are in the packet. Truncated summaries are retrieval pointers, not the full evidence.

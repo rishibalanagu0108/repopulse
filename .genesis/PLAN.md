@@ -18,15 +18,15 @@
 
 ### M1 — Implement the public repository search and detail experience with validated GitHub reads, cache-aware freshness, loading states, and upstream error handling.
 
-- state/risk: active / medium
+- state/risk: done / medium
 - requirements: FR-1, FR-2, FR-3, FR-6, FR-7, FR-11, FR-12, FR-13, NFR-2, NFR-3, AC-1, AC-2, AC-6
 - scope: not bounded
-- gates: github-flow: npm test -- --runInBand, independent-review: pending
+- gates: github-flow: npm test -- --runInBand, independent-review: pass
 - next: Run the task pre-flight.
 
 ### M2 — Implement database migrations, GitHub OAuth, server-only session handling, and ownership-safe watchlists.
 
-- state/risk: queued / high
+- state/risk: active / high
 - requirements: FR-8, FR-9, NFR-4, NFR-5, AC-4
 - scope: not bounded
 - gates: auth-watchlist: npm test -- --runInBand, independent-review: pending

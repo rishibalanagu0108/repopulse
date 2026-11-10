@@ -9,7 +9,7 @@
     "non_goals": [],
     "trust_boundary": "local repository",
     "created_at": "2026-11-10T09:07:15.311Z",
-    "updated_at": "2026-11-10T12:16:58.535Z"
+    "updated_at": "2026-11-10T13:29:46.870Z"
   },
   "policy": {
     "ponytail": "full",
@@ -25,7 +25,7 @@
   "lifecycle": {
     "phase": "build",
     "status": "active",
-    "active_task": "M1",
+    "active_task": "M2",
     "blocker": null,
     "next_action": "Run the task pre-flight."
   },
@@ -259,7 +259,7 @@
     {
       "id": "M1",
       "outcome": "Implement the public repository search and detail experience with validated GitHub reads, cache-aware freshness, loading states, and upstream error handling.",
-      "state": "active",
+      "state": "done",
       "risk": "medium",
       "owner": null,
       "scope": [],
@@ -302,8 +302,14 @@
           "kind": "review",
           "command": "",
           "mandatory": true,
-          "status": "pending",
-          "evidence": null
+          "status": "pass",
+          "evidence": {
+            "path": ".genesis/evidence/M1-independent-review-1ef28aa6-235c-44d7-9af1-aca916f8149f.json",
+            "hash": "58a86da2e2602b511386d4225ad5061471a1446c3dd0949a760401572b538e54",
+            "source_hash": "c05e52024b71860b55f66f0b4dfb57f3ce1694fe436c36154821f4c0cbad580a",
+            "config_hash": "f6554b54e5fd3038f75621ff4f81388d8bdc10ff49de26bc6bc31a127681f591",
+            "observed_at": "2026-11-10T13:29:40.775Z"
+          }
         }
       ],
       "next_action": "Run the task pre-flight.",
@@ -312,7 +318,7 @@
       "failures": [],
       "limitations": [],
       "created_at": "2026-11-10T09:09:21.637Z",
-      "updated_at": "2026-11-10T09:09:21.638Z",
+      "updated_at": "2026-11-10T13:29:44.314Z",
       "base_manifest": {
         ".agents/hooks.json": "be797ce29a3091e0ffc89d10faabed15b6b07890d8f051fa8e2f3ff51a7e628d",
         ".agents/mcp_config.json": "465799fa9f895db572f6e3c48a66b92e1d576dce3ff528cda4c455f36e62e059",
@@ -357,7 +363,7 @@
     {
       "id": "M2",
       "outcome": "Implement database migrations, GitHub OAuth, server-only session handling, and ownership-safe watchlists.",
-      "state": "queued",
+      "state": "active",
       "risk": "high",
       "owner": null,
       "scope": [],
@@ -396,7 +402,55 @@
       "failures": [],
       "limitations": [],
       "created_at": "2026-11-10T09:09:21.848Z",
-      "updated_at": "2026-11-10T09:09:21.848Z"
+      "updated_at": "2026-11-10T09:09:21.848Z",
+      "base_manifest": {
+        ".agents/hooks.json": "be797ce29a3091e0ffc89d10faabed15b6b07890d8f051fa8e2f3ff51a7e628d",
+        ".agents/mcp_config.json": "465799fa9f895db572f6e3c48a66b92e1d576dce3ff528cda4c455f36e62e059",
+        ".agents/rules/concord.md": "d3381baa61b9a9de4d281ded8ee5699b612e437834400e47d2ecd90c650df9e9",
+        ".codex/concord.md": "05ead710b6c85420b315a2754bfba7dae69de71056355b075cf64733ad054749",
+        ".cursor/mcp.json": "4d1fa6de798316492e27477783dd8876525093ba183c817d1535beae9ee1365b",
+        ".cursor/rules/concord.mdc": "84c881a962f3b2d377d6949b3245118236e3990aa433e7ebd2d482bd6ab6dffe",
+        ".devin/hooks.v1.json": "c59995ff99c43d9113ebe062d80287e65264d33bbc966b8a67605df0212b6f01",
+        ".devin/mcp_config.json": "7f37130d642b4c2f8d6620002eb172e609f7064993a8fe5aabccd2fdb82826f6",
+        ".env.example": "2e12170f720ef5a9df780e956aa9c7b6ea445c1d6117939261d6ebcf4db538cd",
+        ".gemini/settings.json": "3d7d1d0aa23b3d39ac88d39b88924c4c039f1a2dbe7cd511f90687b122e9ac16",
+        ".github/copilot-instructions.md": "05ead710b6c85420b315a2754bfba7dae69de71056355b075cf64733ad054749",
+        ".github/mcp.json": "935829681c854d0f3ff585505a9ac71270cb1598c2bf6dd228bf9c150ebbf840",
+        ".gitignore": "3d42b175136cee07c85ed763cd356f2417513a6e06a0efe208418f643f710f1d",
+        ".grok/config.toml": "2453b05a6dba36547a9feb2b0d6646e0b3966e464d34887c6bf1c5b2d570fad4",
+        ".mcp.json": "4d1fa6de798316492e27477783dd8876525093ba183c817d1535beae9ee1365b",
+        ".qwen/settings.json": "0e526521ae27994c6beb2894d795d247a0c6dc093e3698d367817d2c7d7d10df",
+        "AGENTS.md": "235615464406cf91b4aedf7133e248cc034826978c17b4ceba383cc36ac5ae63",
+        "CLAUDE.md": "05ead710b6c85420b315a2754bfba7dae69de71056355b075cf64733ad054749",
+        "DESIGN.md": "6c7111b68b440166f978b59664a2442cb4ffe74c74afc99768ea3a18f8d13012",
+        "README.md": "c63a3ff4d1765ab0c74281026ad719a8a6b3d4dc0a93c74449a7dc0a1353e863",
+        "SPEC.md": "1bd5d97c02577b4fc2df5426347c70c33a205752685abc68da239192beb380e9",
+        "eslint.config.mjs": "90385e9ca3d64e82952714eff5f492ef6294f1fc1f59c02fe030458cff8211f9",
+        "next.config.ts": "571b26eb3f7b22f6b80d274f96048e5fc55e6c49163c195490bc998c8f1a0d6f",
+        "package-lock.json": "25d0f33d171ceca6bc400333b3517706e458dd2e4d128194296f02eed4e41fbc",
+        "package.json": "e4610d219d8df19ab34e4154881f7c55a9de7735c06c1a4fc104745fb495105f",
+        "public/file.svg": "1928c6b2ea04c1904c977cb4c5b95dd2c701aa201c1afe9dfdc9b4c7845c31b3",
+        "public/globe.svg": "58aa29b8da5e4d9fe4d3ac9ba1c741baf8da83e85041b0a2318e8ea6c5e20999",
+        "public/next.svg": "e2f86041532d90d8d414d9c9451f74a3706a7e3b9f84974bb62bc3922e674f84",
+        "public/vercel.svg": "996dce41054df464885bcfe85c8a83f7a09c0bb45300fffb92ff7c7f328cc352",
+        "public/window.svg": "1e2eca457e34f573cd9ffde1061ab43731c19df8efed3a5685f95fc78243f529",
+        "scripts/test.mjs": "b02417d23b27a9991989d356de98d99e2fd7fabe84e8266e2a6615317fbffe22",
+        "src/app/api/repositories/[owner]/[name]/route.ts": "0a801c7e8461bceda94d152973b83aff2a2aeb3257c77342c9870e38af4d60c0",
+        "src/app/api/repositories/search/route.ts": "4efad725c729e11acec35e8a7ef9494c8fe98679b2963a59cab220c7c6748ffb",
+        "src/app/favicon.ico": "4c3826a11f2948ddf86f849667ba841e36fac7e207b4f4c0a587c4845843bd02",
+        "src/app/globals.css": "ba9efb9be42a24f8d8e272de68fb7c2ce21ea719c913f256206d0fb85ce050d1",
+        "src/app/layout.tsx": "960caf65cef90afeb9fc3fac06c462246741eba7d2f06262c16edfed0d3f4c0a",
+        "src/app/page.tsx": "f79f8ab3bb727a6ec3fdcb24aecd8701be977d5019d245e2a5a3b9d2fc7b9f2e",
+        "src/app/repository/[owner]/[name]/loading.tsx": "cb572277fd97e1f76feb678b914443c6641e183fa12429a253820b2f47fe3b27",
+        "src/app/repository/[owner]/[name]/page.tsx": "77627e078c885fec1e2fd4764925a5fc624823ddf6d2549051a3594f654c206a",
+        "src/components/repository-search.tsx": "f4c1d681095d0baf10c9c204110205becf16ef19055b9219bb4e4f6472d8970e",
+        "src/lib/env.test.ts": "9c8887dd2f82ad63c297168c83a9377160e79924b8f919bca9605a40532369dd",
+        "src/lib/env.ts": "0a1ca13db706f43a2989df5098d7a92e2725a0c861fa628446e622c063fa68b6",
+        "src/lib/github.test.ts": "a5aafbee0e402f01d3b1d9ccbb0090165d94e05b052108146971c2439459e68f",
+        "src/lib/github.ts": "f2fd49cb98a8b8c740ad1176a7f1b756a2aa82366142abff171acd9ce5ef063b",
+        "tsconfig.json": "225a7d68d1e35e70ebe714cc92ce421b1276e9ccf74056fc16d90f5388915453",
+        "vitest.config.ts": "5f3ee314266be7ff460211dec1af95bb3225ebb71bd2f17396635efa02e306bc"
+      }
     },
     {
       "id": "M3",
@@ -500,6 +554,15 @@
       "task": "M0",
       "human": "Rishik Kumar",
       "reason": "Reviewed the M0 local preview, foundation checks, and pushed implementation.",
+      "revision": null
+    },
+    {
+      "id": "1ef28aa6-235c-44d7-9af1-aca916f8149f",
+      "at": "2026-11-10T13:29:40.775Z",
+      "action": "approve",
+      "task": "M1",
+      "human": "Rishik Kumar",
+      "reason": "Reviewed and approved M1 implementation and passing github-flow gate.",
       "revision": null
     }
   ],
@@ -654,13 +717,13 @@
   "incidents": [],
   "discovery": null,
   "checkpoint": {
-    "at": "2026-11-10T12:16:58.472Z",
+    "at": "2026-11-10T13:29:46.838Z",
     "revision": {
-      "commit": "9e7205bfabbcc4ab900db0b532850eb49193d18a",
+      "commit": "2d85d65ddb529b1d4854af60942bc0a771521722",
       "dirty": true,
       "source_hash": "c05e52024b71860b55f66f0b4dfb57f3ce1694fe436c36154821f4c0cbad580a"
     },
-    "active_task": "M1",
+    "active_task": "M2",
     "next_action": "Run the task pre-flight."
   },
   "legacy": null
